@@ -1,0 +1,31 @@
+
+   <div class="recommendations">
+    <h2>Fresh recommendations</h2>
+    <div class="card-container">
+      <div class="card" *ngFor="let item of items">
+        <div class="card-header" *ngIf="item.featured">
+          <span>FEATURED</span>
+        </div>
+        <img [src]="item.image" alt="Item Image" class="card-image">
+        <div class="card-body">
+          <h3 class="price">{{ item.price }}</h3>
+          <p class="details">{{ item.details }}</p>
+          <p class="location">{{ item.location }}</p>
+          <p class="date">{{ item.date }}</p>
+        </div>
+      </div>
+      <div class="card special-card">
+        <div class="special-content">
+          <h3>Want to see your stuff here?</h3>
+          <p>Make some extra cash by selling things in your community. Go on, it's quick and easy.</p>
+          <button class="start-selling-button">Start selling</button>
+        </div>
+      </div>
+    </div>
+    <div class="button-container">
+        <button id="loadbtn">Load more</button>
+    </div>
+
+   
+  </div>
+  
