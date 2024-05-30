@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+// import { IconModule } from 'primeng/icon';
+import { NgModule } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
