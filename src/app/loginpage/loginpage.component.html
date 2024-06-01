@@ -12,12 +12,12 @@
         <img src="https://th.bing.com/th/id/R.20273cfda041b47e89e057a4c2296928?rik=r37He6WsfrP5og&riu=http%3a%2f%2fwww.freepnglogos.com%2fuploads%2fmobile-circle-logo-png-30.png&ehk=Ia8lOO0uhJxUeyQZEfTo%2b5TYl1EoGmYbdsEpVUJxcjs%3d&risl=&pid=ImgRaw&r=0" alt="Phone Icon" class="button-icon">
         Continue with phone
       </button>
-      <button class="login-button google-login">
-        <img src="https://th.bing.com/th/id/OIP.D6P-BO32wCApcPIIjt6p5wAAAA?rs=1&pid=ImgDetMain" alt="Google Icon" class="button-icon">
+      <button class="login-button google-login" (click)="navigateToUser()">
+        <img src="https://th.bing.com/th/id/OIP.D6P-BO32wCApcPIIjt6p5wAAAA?rs=1&pid=ImgDetMain" alt="Google Icon" class="button-icon" >
         Continue with Google
       </button>
       <div class="or">OR</div>
-      <a href="www.google.com" class="email-login">Login with Email</a>
+      <a href="#" class="email-login" (click)="navigateToUser()">Login with Email</a>
       <!-- <button (click)="goToGoogle()">Go to Google</button> -->
       <!-- <button><a (click)="goToHead()" >headeecomponent</a></button> -->
       <p class="privacy-text">

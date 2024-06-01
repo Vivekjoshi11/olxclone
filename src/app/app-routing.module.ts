@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginpageComponent } from './loginpage/loginpage.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
+import { UserHomeComponent } from './user-home/user-home.component';
+import { SellComponentComponent } from './sell-component/sell-component.component';
 
 
 
@@ -20,6 +22,14 @@ const routes: Routes = [
         path: 'home',
          component: HomeComponent 
         },
+        { 
+          path: 'Profileuser',
+           component: UserHomeComponent 
+          },
+          { 
+            path: 'sellComponent',
+             component: SellComponentComponent 
+            },
 ];
 
 @NgModule({

@@ -1,0 +1,68 @@
+.post-ad-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .post-ad-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .post-ad-header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .category-selection {
+    margin-top: 20px;
+  }
+  
+  .category-selection h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .category-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .category-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .category-item i {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .category-item span {
+    flex: 1;
+    font-size: 16px;
+  }
+  
+  .category-item i.fa-chevron-right {
+    font-size: 14px;
+    color: #bbb;
+  }
+  

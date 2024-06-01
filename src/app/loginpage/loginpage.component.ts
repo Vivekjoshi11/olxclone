@@ -8,12 +8,19 @@ import { Router } from '@angular/router';
   styleUrl: './loginpage.component.css'
 })
 export class LoginpageComponent {
-  goToGoogle(): void {
-    window.open('https://www.google.com', '_blank');
-  }
+  // goToGoogle(): void {
+  //   window.open('https://www.google.com', '_blank');
+  // }
   constructor(private router: Router) {}
 
-  goToHead() {
-    this.router.navigate(['/home']);
+  // goToHead() {
+  //   this.router.navigate(['/home']);
+  // }
+  
+  // ngOnInit(): void {
+  // }
+  navigateToUser(): void {
+    this.router.navigate(['/Profileuser']);
+    console.log('done');
   }
 }

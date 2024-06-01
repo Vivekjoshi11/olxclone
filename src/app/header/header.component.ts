@@ -15,5 +15,9 @@ export class HeaderComponent {
     this.router.navigate(['login']);
     console.log('done')
   }
+  navigateToUser(): void {
+    this.router.navigate(['/Profileuser']);
+    console.log('done')
+  }
 }
 

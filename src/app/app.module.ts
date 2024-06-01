@@ -13,6 +13,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { ProductDetailsNextComponent } from './product-details-next/product-details-next.component';
 import { ProfileHeaderComponent } from './profile-header/profile-header.component';
 import { SellComponentComponent } from './sell-component/sell-component.component';
+import { UserheaderComponent } from './userheader/userheader.component';
+import { UserHomeComponent } from './user-home/user-home.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { SellComponentComponent } from './sell-component/sell-component.componen
     HomeComponent,
     ProductDetailsNextComponent,
     ProfileHeaderComponent,
-    SellComponentComponent
+    SellComponentComponent,
+    UserheaderComponent,
+    UserHomeComponent
     
   ],
   imports: [
