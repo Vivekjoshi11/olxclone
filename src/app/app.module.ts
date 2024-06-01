@@ -9,6 +9,10 @@ import { LoginpageComponent } from './loginpage/loginpage.component';
 import { FooterComponent } from './footer/footer.component';
 // import { HomComponent } from './hom/hom.component';
 import { HomeComponent } from './home/home.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { ProductDetailsNextComponent } from './product-details-next/product-details-next.component';
+import { ProfileHeaderComponent } from './profile-header/profile-header.component';
+import { SellComponentComponent } from './sell-component/sell-component.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,10 @@ import { HomeComponent } from './home/home.component';
     HeaderComponent,
     LoginpageComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    ProductDetailsNextComponent,
+    ProfileHeaderComponent,
+    SellComponentComponent
     
   ],
   imports: [
@@ -25,7 +32,8 @@ import { HomeComponent } from './home/home.component';
     AppRoutingModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })
