@@ -16,6 +16,11 @@ import { SellComponentComponent } from './sell-component/sell-component.componen
 import { UserheaderComponent } from './userheader/userheader.component';
 import { UserHomeComponent } from './user-home/user-home.component';
 
+import { MatIconModule } from '@angular/material/icon';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatButtonModule } from '@angular/material/button'; // For mat-b
+import { MatListModule } from '@angular/material/list';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +38,12 @@ import { UserHomeComponent } from './user-home/user-home.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatIconModule ,
+    BrowserAnimationsModule, // Required for Angular Material
+    MatMenuModule,
+    MatButtonModule,
+    MatListModule,
   ],
   providers: [
     provideClientHydration(),

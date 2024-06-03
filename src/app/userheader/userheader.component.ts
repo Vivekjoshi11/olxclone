@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import {MatIconModule} from '@angular/material/icon';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-userheader',
@@ -15,6 +18,10 @@ export class UserheaderComponent {
   // }
   navigateToLogin(): void {
     this.router.navigate(['login']);
+    console.log('done')
+  }
+  navigateTosell(): void {
+    this.router.navigate(['sellComponent']);
     console.log('done')
   }
 }

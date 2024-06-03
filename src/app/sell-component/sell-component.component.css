@@ -3,6 +3,7 @@
     margin: 0 auto;
     padding: 20px;
     font-family: Arial, sans-serif;
+    border: 0.5px solid grey;
   }
   
   .post-ad-header {
@@ -38,6 +39,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    width: 70%;
   }
   
   .category-item {
@@ -66,3 +68,30 @@
     color: #bbb;
   }
   
+
+  .container {
+    margin: 20px;
+  }
+  
+  .list-group-item {
+    cursor: pointer;
+  }
+  
+  .list-group-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  align-items: start;
+}
