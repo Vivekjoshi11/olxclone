@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+ 
+  }
+  
+  .container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  
+    justify-content: center;
+    align-items: center;
+    /* Additional styles for content (optional) */
+    /* width: 50%;  */
+     /* Adjust width as needed */
+    margin: auto; 
+  }
+  
+  .product-image {
+    width: 500px;
+    height: 400px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product-image img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .product-details {
+    width: 600px;
+    /* border: 1px solid black; */
+  }
+  
+  .product-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* border: 1px solid black; */
+  }
+  
+  .product-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .product-description {
+    margin-bottom: 10px;
+  }
+  
+  .seller-info {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .seller-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .seller-location {
+    margin-bottom: 10px;
+  }
+  
+  .seller-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .seller-action-button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .seller-action-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .seller-action-phone {
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+
+  }
+  
+  .pagination-button {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pagination-button:hover {
+    background-color: #eee;
+  }
+  .image-viewer {
+    display: flex;
+    align-items: center; 
+    width: 700px;
+    border: 1px solid black;
+    height: 500px;
+    background-color: rgb(215, 210, 210);
+
+  }
+  
+  .image-viewer img {
+    width: auto; /* Adjust width as needed */
+    /* max-width: 68%; */
+     /* Optional: Set a maximum width */
+    height: auto; /* Adjust height as needed */
+    max-height: 100%; /* Optional: Set a maximum height */
+  }
+  
+  .image-viewer button {
+    padding: 8px 16px; /* Add padding for buttons */
+    background-color: #ddd; /* Set a default background color */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Indicate clickable buttons */
+  }
+  
+  .prev-button{
+    display: flex; /* Ensure flexbox is enabled */
+  justify-content: flex-start; 
+  background-color: white;
+  color: white;
+  margin-right: 50px;
+  }
+  .next-button{
+    margin-left: 50px;
+    display: flex; /* Ensure flexbox is enabled */
+    justify-content: flex-end;
+  }
+  .description{
+ 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

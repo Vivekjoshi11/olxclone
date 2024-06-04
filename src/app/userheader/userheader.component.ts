@@ -24,4 +24,8 @@ export class UserheaderComponent {
     this.router.navigate(['sellComponent']);
     console.log('done')
   }
+  navigateToMessage(): void {
+    this.router.navigate(['messageComponent']);
+    console.log('done')
+  }
 }

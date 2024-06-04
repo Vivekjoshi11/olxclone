@@ -21,6 +21,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button'; // For mat-b
 import { MatListModule } from '@angular/material/list';
+import { MssageComponentComponent } from './mssage-component/mssage-component.component';
+import { FormsModule } from '@angular/forms';
+import { AdvertisementComponent } from './advertisement/advertisement.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +37,9 @@ import { MatListModule } from '@angular/material/list';
     ProfileHeaderComponent,
     SellComponentComponent,
     UserheaderComponent,
-    UserHomeComponent
+    UserHomeComponent,
+    MssageComponentComponent,
+    AdvertisementComponent
     
   ],
   imports: [
@@ -44,6 +50,7 @@ import { MatListModule } from '@angular/material/list';
     MatMenuModule,
     MatButtonModule,
     MatListModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration(),

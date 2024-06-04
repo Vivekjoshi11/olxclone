@@ -17,13 +17,15 @@
             <option value="ENGLISH">ENGLISH</option>
 
         </select>
-        <button class="search-button">
+        <button class="search-button" (click)="navigateToMessage()">
             <img src="https://www.svgrepo.com/show/144611/messages-bubble.svg" alt="message" class="search-icon">
         </button>
         <button class="search-button">
+
             <img src="https://static-00.iconduck.com/assets.00/notification-icon-1842x2048-xr57og4y.png"
                 class="search-icon">
         </button>
+        
         <div>
             <div class="user-avatar">
                 <img src="https://media.licdn.com/dms/image/D4D03AQElzzqBzfL00A/profile-displayphoto-shrink_800_800/0/1702826791570?e=2147483647&v=beta&t=5WbCcYn0WCX4RRUi4UqmeBaMqQRjsrRcKeB41FMVmyQ"
@@ -42,13 +44,14 @@
                     </path>
                 </svg></mat-icon>
         </button>
-        <mat-menu #menu="matMenu" class="menu1" [style.width]="'200px'">
+        <mat-menu #menu="matMenu" class="menu1" [style.width]="'300px'">
+            <div class="user-avatar" style="align-content: center;">
+                <img src="https://media.licdn.com/dms/image/D4D03AQElzzqBzfL00A/profile-displayphoto-shrink_800_800/0/1702826791570?e=2147483647&v=beta&t=5WbCcYn0WCX4RRUi4UqmeBaMqQRjsrRcKeB41FMVmyQ"
+                    alt="User">
+            </div>
             <button mat-menu-item>
 
-                <mat-icon class="user-avatar">
-                    <img src="https://media.licdn.com/dms/image/D4D03AQElzzqBzfL00A/profile-displayphoto-shrink_800_800/0/1702826791570?e=2147483647&v=beta&t=5WbCcYn0WCX4RRUi4UqmeBaMqQRjsrRcKeB41FMVmyQ"
-                        alt="User">
-                </mat-icon>
+                <mat-icon>perm_identity</mat-icon>
                 <span>Vicky</span>
             </button>
             <button mat-menu-item style="background-color: white;" >

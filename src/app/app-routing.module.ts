@@ -5,31 +5,42 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { UserHomeComponent } from './user-home/user-home.component';
 import { SellComponentComponent } from './sell-component/sell-component.component';
+import { MssageComponentComponent } from './mssage-component/mssage-component.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { ProductDetailsNextComponent } from './product-details-next/product-details-next.component';
 
 
 
 const routes: Routes = [
   // { path: 'login', loadComponent: () => import('./loginpage/loginpage.compone bnt').then(m => m.LoginpageComponent) },
-  { 
+  {
     path: 'login',
-     component: LoginpageComponent 
-    },
-    { 
-      path: 'header',
-       component: HeaderComponent 
-      },
-      { 
-        path: 'home',
-         component: HomeComponent 
-        },
-        { 
-          path: 'Profileuser',
-           component: UserHomeComponent 
-          },
-          { 
-            path: 'sellComponent',
-             component: SellComponentComponent 
-            },
+    component: LoginpageComponent
+  },
+  {
+    path: 'header',
+    component: HeaderComponent
+  },
+  {
+    path: 'home',
+    component: HomeComponent
+  },
+  {
+    path: 'Profileuser',
+    component: UserHomeComponent
+  },
+  {
+    path: 'sellComponent',
+    component: SellComponentComponent
+  },
+  {
+    path: 'messageComponent',
+    component: MssageComponentComponent
+  },
+  {
+    path: 'productdetailpage',
+    component: ProductDetailsNextComponent
+  },
 ];
 
 @NgModule({
