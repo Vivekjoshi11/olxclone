@@ -72,6 +72,9 @@ body {
     text-decoration: none;
     color: #000;
     font-weight: bold;
+    height: auto;
+    width: auto;
+    background: rgb(246, 243, 243);
   }
   
   .sell-button {

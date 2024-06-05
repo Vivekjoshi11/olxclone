@@ -28,6 +28,9 @@
   
   .category-selection {
     margin-top: 20px;
+    width: 80%;
+    margin-left: 0;
+    margin-right: 0;
   }
   
   .category-selection h2 {
@@ -44,18 +47,20 @@
   
   .category-item {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: start;
+    /* justify-content: space-between; */
     padding: 10px 15px;
     border: 1px solid #ddd;
     border-radius: 4px;
     margin-bottom: 10px;
     cursor: pointer;
+    /* width: 50%; */
   }
   
   .category-item i {
     font-size: 20px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
+    width: 100%;
   }
   
   .category-item span {
@@ -69,9 +74,11 @@
   }
   
 
-  .container {
-    margin: 20px;
-  }
+  /* .container { */
+    /* margin: 20px; */
+    /* width: 100%; */
+    
+  /* } */
   
   .list-group-item {
     cursor: pointer;
@@ -84,7 +91,9 @@
   .row {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    margin: 0;
+    align-items: start;
+    /* flex-wrap: wrap; */
     width: 100%;
 }
 

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
@@ -11,6 +11,7 @@ import {MatButtonModule} from '@angular/material/button';
 })
 export class UserheaderComponent {
 
+  @Input() isOpen: boolean = false;
   constructor(
     private router: Router
   ) { }
@@ -27,5 +28,8 @@ export class UserheaderComponent {
   navigateToMessage(): void {
     this.router.navigate(['messageComponent']);
     console.log('done')
+  }
+  closePanel() {
+    this.isOpen = false;
   }
 }

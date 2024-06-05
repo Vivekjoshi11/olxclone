@@ -23,4 +23,8 @@ export class LoginpageComponent {
     this.router.navigate(['/Profileuser']);
     console.log('done');
   }
+  navigateTohome(): void{
+    this.router.navigate(['/home']);
+    console.log('done');
+  }
 }

@@ -10,12 +10,9 @@ body {
     gap: 20px;
     padding: 20px;
   
-    justify-content: center;
-    align-items: center;
-    /* Additional styles for content (optional) */
-    /* width: 50%;  */
-     /* Adjust width as needed */
-    margin: auto; 
+    /* justify-content: center;
+    align-items: center; */
+    margin: 50px; 
   }
   
   .product-image {
@@ -33,15 +30,15 @@ body {
   }
   
   .product-details {
-    width: 600px;
-    /* border: 1px solid black; */
+   
+    width: 50%;
+    padding: 100px;
   }
   
   .product-title {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
-    /* border: 1px solid black; */
   }
   
   .product-price {
@@ -114,7 +111,7 @@ body {
   .image-viewer {
     display: flex;
     align-items: center; 
-    width: 700px;
+    width: 100%;
     border: 1px solid black;
     height: 500px;
     background-color: rgb(215, 210, 210);
@@ -134,25 +131,33 @@ body {
     background-color: #ddd; /* Set a default background color */
     border: none; /* Remove default border */
     cursor: pointer; /* Indicate clickable buttons */
+
   }
   
   .prev-button{
-    display: flex; /* Ensure flexbox is enabled */
-  justify-content: flex-start; 
+    /* display: flex; Ensure flexbox is enabled */
+  /* justify-content: flex-start; 
   background-color: white;
-  color: white;
-  margin-right: 50px;
+  color: white; */
+  margin-right: auto;
+  padding-left: 20px;
   }
   .next-button{
-    margin-left: 50px;
-    display: flex; /* Ensure flexbox is enabled */
-    justify-content: flex-end;
+    /* display: flex; */
+    margin-left: auto;
+    /* display: flex; Ensure flexbox is enabled */
+    /* justify-content: flex-end; */
+    padding-right: 20px;
   }
   .description{
  
-
+    width: 50%;
+    margin-left: 50px;
+    border: 1px solid black;
+    padding: 50px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
   }
   

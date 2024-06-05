@@ -176,3 +176,15 @@ body {
     width: 450px;
   }
   
+
+  .notification-panel {
+    position: absolute; /* Position the panel absolutely */
+    top: 50px; /* Adjust position as needed */
+    right: 10px; /* Adjust position as needed */
+    background-color: #fff; /* Set background color */
+    border: 1px solid #ddd; /* Add border */
+    padding: 10px; /* Add padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    /* Add other styles as desired */
+  }
+  
