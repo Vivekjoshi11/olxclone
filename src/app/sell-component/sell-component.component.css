@@ -1,4 +1,4 @@
-.post-ad-container {
+/* .post-ad-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
@@ -48,18 +48,15 @@
   .category-item {
     display: flex;
     align-items: start;
-    /* justify-content: space-between; */
     padding: 10px 15px;
     border: 1px solid #ddd;
     border-radius: 4px;
     margin-bottom: 10px;
     cursor: pointer;
-    /* width: 50%; */
   }
   
   .category-item i {
     font-size: 20px;
-    /* margin-right: 10px; */
     width: 100%;
   }
   
@@ -74,11 +71,6 @@
   }
   
 
-  /* .container { */
-    /* margin: 20px; */
-    /* width: 100%; */
-    
-  /* } */
   
   .list-group-item {
     cursor: pointer;
@@ -93,8 +85,154 @@
     flex-direction: row;
     margin: 0;
     align-items: start;
-    /* flex-wrap: wrap; */
+  
     width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  align-items: start;
+} */
+
+/* Base styles */
+body {
+  margin: 0; /* Remove default body margin */
+  font-family: Arial, sans-serif; /* Set default font family */
+}
+
+/* Header styles */
+header {
+  background-color: rgb(240, 240, 240);
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+/* Post ad container styles */
+.post-ad-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  border: 0.5px solid grey;
+}
+
+/* Responsive media queries */
+@media (max-width: 768px) {
+  .post-ad-container {
+    padding: 15px;
+  }
+
+  .post-ad-header h1 {
+    font-size: 20px;
+  }
+
+  .category-selection {
+    margin-top: 15px;
+  }
+
+  .category-selection h2 {
+    font-size: 16px;
+  }
+
+  .category-list {
+    width: 100%;
+  }
+
+  .category-item {
+    padding: 8px 10px;
+    margin-bottom: 5px;
+  }
+
+  .category-item h4 {
+    font-size: 14px;
+  }
+}
+
+/* Post ad header styles */
+.post-ad-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.post-ad-header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Category selection styles */
+.category-selection {
+  margin-top: 20px;
+  width: 80%; /* Adjust width as needed for larger screens */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.category-selection h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Set width to 100% for responsiveness */
+}
+
+.category-item {
+  display: flex;
+  align-items: start;
+  justify-content: space-between; /* Align content within each item */
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.category-item i {
+  font-size: 20px;
+  margin-right: 10px; /* Maintain some margin for icon */
+}
+
+.category-item span {
+  flex: 1; /* Allow text to expand within remaining space */
+  font-size: 16px;
+}
+
+.category-item i.fa-chevron-right {
+  font-size: 14px;
+  color: #bbb;
+}
+
+/* Other styles (unchanged for brevity) */
+.list-group-item {
+  cursor: pointer;
+}
+
+.list-group-item:hover {
+  background-color: #f0f0f0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  align-items: start;
+  width: 100%;
 }
 
 .column {
