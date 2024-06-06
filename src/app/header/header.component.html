@@ -4,6 +4,8 @@
             <img src="https://www.liblogo.com/img-logo/ol8430f3c1-olx-logo-file-olx-new-logo-png-wikimedia-commons.png" alt="OLX Logo" class="logo">
             <select id="country-selector" class="country-selector">
                 <option value="India">India</option>
+                <option value="America">America</option>
+                <option value="Canada">Canada</option>
             </select>
         </div>
         <div class="header-center">
@@ -15,15 +17,15 @@
         <div class="header-right">
             <select id="language-selector" class="language-selector">
                 <option value="ENGLISH">ENGLISH</option>
+                <option value="HINDI">HINDI</option>
+                <option value="SPANISH">SPANISH</option>
             </select>
-            <!-- <a href="javascript:void(0)" class="login-link" (click)="goToLogin()" >Login</a> -->
             
-
-             <!-- <button (click)="navigateToLogin()">Login</button> -->
-             <button class="login-link "><a routerLink="/login">login</a></button>
-            <!-- <button class="sell-button" id="sell-button" (click)="navigateToUser()">+ SELL</button> -->
-            <button class="sell-button" id="sell-button" (click)="navigateToLogin()">+ SELL</button>
+             <button class="login-link " (click)="navigateToLogin()"><a routerLink="/login">login</a></button>
+              <button class="sell-button" id="sell-button" (click)="navigateToLogin()">+ SELL</button>
         </div>
+       
     </header>
+    <app-subheader></app-subheader>
 
 

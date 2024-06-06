@@ -1,0 +1,79 @@
+.subheader {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    width: -webkit-fill-available;
+    justify-content: center;
+}
+
+
+.categories-dropdown {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.all-categories {
+    cursor: pointer;
+}
+
+.dropdown-icon {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.categories {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.categories span {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .subheader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .categories {
+        flex-wrap: wrap;
+    }
+
+    .categories span {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .subheader {
+        padding: 5px 10px;
+    }
+
+    .categories span {
+        margin-right: 10px;
+    }
+}
+
+/* .select { */
+    /* Style the dropdown itself */
+  /* } */
+  
+  select option {
+    display: flex;
+    justify-content: space-between; /* Distribute content horizontally */
+  }
+  
+  /* .select option span { */
+    /* Style individual columns (name, description) */
+  /* } */
+  
+
+
+

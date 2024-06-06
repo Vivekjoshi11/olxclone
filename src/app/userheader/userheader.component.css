@@ -32,6 +32,9 @@ body {
     border-radius: 4px;
     background-color: white;
     width: 250px;
+    height: 40px;
+    border: 2px solid black;
+
 
   }
   .language-selector {
@@ -40,24 +43,31 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: white;
+    height: 40px;
+    border: 2px solid black;
+
   }
   
   .search-input {
     padding: 10px;
-    width: 500px;
+    width: 650px;
     border: 1px solid #ccc;
     border-radius: 4px 0 0 4px;
     outline: none;
+    border: 2px solid black;
+
   }
   
   .search-button {
     padding: 10px;
     margin-left: 5px;
-    height: 38px;
+    height: 40px;
     /* background-color: #ccc; */
     border: none;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
+    border: 2px solid black;
+
   }
   
   .search-icon {
