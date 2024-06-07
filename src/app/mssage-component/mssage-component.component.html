@@ -4,10 +4,18 @@
 
 <div class="messaging-container">
     <div class="contacts-panel">
-      <!-- <div class="search-bar"> -->
-        <!-- <input type="text" placeholder="Search"> -->
-        <!-- <button><i class="fa fa-paper-plane"></i> </button> -->
-      <!-- </div> -->
+      <!-- <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <button><i class="fa fa-paper-plane"></i> </button>
+      </div> -->
+       <ul>
+       
+       </ul>
+       <div class="inbox-header">
+        <span class="inbox-title">INBOX</span>
+       
+        
+    </div>
       <ul class="contacts-list">
         <li *ngFor="let contact of contacts" (click)="selectContact(contact)" [class.active]="contact === selectedContact">
           <div class="contact">
@@ -17,6 +25,8 @@
               <p>{{ contact.lastMessage }}</p>
             </div>
             <span class="time">{{ contact.time }}</span>
+            <span><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="24"><path d="M192 616q-33 0-56.5-23.5T112 536q0-33 23.5-56.5T192 456q33 0 56.5 23.5T272 536q0 33-23.5 56.5T192 616Zm288 0q-33 0-56.5-23.5T400 536q0-33 23.5-56.5T480 456q33 0 56.5 23.5T560 536q0 33-23.5 56.5T480 616Zm288 0q-33 0-56.5-23.5T688 536q0-33 23.5-56.5T768 456q33 0 56.5 23.5T848 536q0 33-23.5 56.5T768 616Z"/></svg>
+            </span>
           </div>
         </li>
       </ul>
