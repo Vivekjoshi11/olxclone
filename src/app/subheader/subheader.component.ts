@@ -7,11 +7,14 @@ import { Component } from '@angular/core';
 })
 export class SubheaderComponent {
 
-  data = [
-  { id: 1, name: "Item 1", description: "Description for item 1" },
-  { id: 2, name: "Item 2", description: "Description for item 2" },
-  // ... more data
-];
+  megaMenuVisible = false;
 
-selectedValue: any;
+  showMegaMenu() {
+    this.megaMenuVisible = true;
+  }
+
+  hideMegaMenu() {
+    this.megaMenuVisible = false;
+  }
+  
 }

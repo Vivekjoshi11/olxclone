@@ -62,7 +62,7 @@ body {
     padding: 10px;
     margin-left: 5px;
     height: 40px;
-    /* background-color: #ccc; */
+    
     border: none;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
@@ -73,7 +73,6 @@ body {
   .search-icon {
     height: 20px;
     width: 20px;
-    /* background-color: black; */
     color: white;
   }
   
@@ -188,13 +187,17 @@ body {
   
 
   .notification-panel {
-    position: absolute; /* Position the panel absolutely */
-    top: 50px; /* Adjust position as needed */
-    right: 10px; /* Adjust position as needed */
-    background-color: #fff; /* Set background color */
-    border: 1px solid #ddd; /* Add border */
-    padding: 10px; /* Add padding */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow effect */
-    /* Add other styles as desired */
+    position: absolute;
+        top: 50px; 
+    right: 10px; 
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
   }
+  
+
+  
+
+
   

@@ -32,4 +32,7 @@ export class UserheaderComponent {
   closePanel() {
     this.isOpen = false;
   }
+
+
+  
 }
