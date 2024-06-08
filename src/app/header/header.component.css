@@ -40,11 +40,13 @@ body {
   .language-selector {
     padding: 5px;
     margin-right: 5px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     border-radius: 4px;
-    background-color: white;
+    background-color: #f8f8f8;
     height: 40px;
-    border: 2px solid black;
+    border: none;
+    /* border: 2px solid black; */
+    font-weight: 600;
   }
   
   .search-input {
@@ -58,8 +60,9 @@ body {
   
   .search-button {
     padding: 10px;
-    margin-left: 5px;
+    /* margin-left: 5px; */
     height: 40px;
+    background-color: black;
     border: none;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
@@ -77,10 +80,12 @@ body {
     text-decoration: none;
     color: #000;
     font-weight: bold;
+    font-size: 18px;
     height: 27px;
     width: 70px;
-    background: rgb(246, 243, 243);
-    border-radius: 9px;
+    background: #f8f8f8;
+    /* border-radius: 9px; */
+    border: none;
     height: 35px;
   }
   
