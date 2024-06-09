@@ -2,14 +2,16 @@
     <div class="header-left">
         <img src="https://www.liblogo.com/img-logo/ol8430f3c1-olx-logo-file-olx-new-logo-png-wikimedia-commons.png"
             alt="OLX Logo" class="logo">
-        <select id="country-selector" class="country-selector">
+        <select  class="country-selector">
             <option value="India">India</option>
         </select>
     </div>
     <div class="header-center">
         <input type="text" placeholder="Find Cars, Mobile Phones and more..." class="search-input">
         <button class="search-button">
-            <img src="https://img.icons8.com/ios-filled/50/000000/search.png" alt="Search Icon" class="search-icon">
+            <!-- <img src="https://img.icons8.com/ios-filled/50/000000/search.png" alt="Search Icon" class="search-icon"> -->
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M221.09 64a157.09 157.09 0 1 0 157.09 157.09A157.1 157.1 0 0 0 221.09 64Z"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"/></svg>
+            
         </button>
     </div>
     <div class="header-right">
@@ -17,13 +19,14 @@
             <option value="ENGLISH">ENGLISH</option>
 
         </select>
-        <button class="search-button" (click)="navigateToMessage()">
+        <button class="message-button" (click)="navigateToMessage()">
             <img src="https://www.svgrepo.com/show/144611/messages-bubble.svg" alt="message" class="search-icon">
         </button>
-        <button class="search-button">
+        <button class="message-button">
 
             <img src="https://static-00.iconduck.com/assets.00/notification-icon-1842x2048-xr57og4y.png"
                 class="search-icon">
+                
         </button>
         
         <div>
@@ -45,46 +48,44 @@
                 </svg></mat-icon>
         </button>
         <mat-menu #menu="matMenu" class="menu1" [style.width]="'300px'">
-            <div class="user-avatar" style="align-content: center;">
+            <div class="user-avatar" style="align-content: center; display: flex; margin: 10px; align-items: center;">
                 <img src="https://media.licdn.com/dms/image/D4D03AQElzzqBzfL00A/profile-displayphoto-shrink_800_800/0/1702826791570?e=2147483647&v=beta&t=5WbCcYn0WCX4RRUi4UqmeBaMqQRjsrRcKeB41FMVmyQ"
-                    alt="User">
+                    alt="User"><span style="margin-left: 10px ; font-size: 25px;">Vicky Joe</span>
             </div>
-            <button mat-menu-item>
-
-                <mat-icon>perm_identity</mat-icon>
-                <span>Vicky</span>
+            <button class="vebutton">
+                View and Edit Peofile
             </button>
-            <button mat-menu-item style="background-color: white;" >
+            <button mat-menu-item style="background-color: white; width: 288px;" >
                 <mat-icon><mat-icon>favorite_border</mat-icon></mat-icon>
                 <span>Favourait ads
 
                 </span>
             </button>
-            <button mat-menu-item style="background-color: white;">
+            <button mat-menu-item style="background-color: white; width: 288px;">
                 <mat-icon>notifications_off</mat-icon>
                 <span>Disable alerts</span>
             </button>
-            <button mat-menu-item style="background-color: white;">
+            <button mat-menu-item style="background-color: white; width: 288px;">
                 <mat-icon> list_alt</mat-icon>
                 <span>Disable alerts</span>
             </button>
-            <button mat-menu-item style="background-color: white;">
+            <button mat-menu-item style="background-color: white; width: 288px;">
                 <mat-icon>help_outline</mat-icon>
                 <span>Help</span>
             </button>
-            <button mat-menu-item style="background-color: white;">
+            <button mat-menu-item style="background-color: white; width: 288px;">
                 <mat-icon>language</mat-icon>
                 <span>Select language</span>
             </button>
-            <button mat-menu-item style="background-color: white;">
+            <button mat-menu-item style="background-color: white; width: 288px;">
                 <mat-icon>settings</mat-icon>
                 <span>Settings</span>
             </button>
-            <button mat-menu-item style="background-color: white;">
+            <button mat-menu-item style="background-color: white; width: 288px;">
                 <mat-icon>file_download</mat-icon>
                 <span>Download</span>
             </button>
-            <button mat-menu-item style="background-color: white;">
+            <button mat-menu-item style="background-color: white; width: 288px;">
                 <mat-icon>exit_to_app</mat-icon>
                 <span>Log out</span>
             </button>
@@ -92,3 +93,5 @@
         <button class="sell-button" id="sell-button" (click)="navigateTosell()">+ SELL</button>
     </div>
 </header>
+
+<app-subheader></app-subheader>

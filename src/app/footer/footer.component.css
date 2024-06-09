@@ -1,4 +1,4 @@
-.footer {
+/* .footer {
     background-color: #004c56;
     color: white;
     padding: 20px 0;
@@ -66,4 +66,101 @@
   .appplaylogo{
     width: 100px;
     height: 55px;
+  } */
+
+
+
+  /* Base styles */
+body {
+  margin: 0; /* Remove default body margin */
+  font-family: Arial, sans-serif; /* Set default font family */
+}
+
+/* Footer styles */
+.footer {
+  background-color: #004c56;
+  color: white;
+  padding: 20px 0;
+}
+
+/* Responsive layout for footer-top using flexbox */
+.footer-top {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  justify-content: space-around;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Adjust footer-column styles for smaller screens */
+.footer-column {
+  flex: 1; /* Make each column take up equal space on larger screens */
+  margin: 0 10px; /* Add horizontal margin for better spacing */
+  padding: 15px; /* Add padding for better visual separation */
+  text-align: center; /* Center content within each column */
+}
+
+@media (max-width: 768px) {
+  .footer-column {
+    flex: 100%; /* Make each column take up full width on smaller screens */
   }
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+  justify-content: center; /* Center social icons on smaller screens */
+}
+
+.app-links {
+  display: flex;
+  gap: 10px;
+  justify-content: center; /* Center app store icons on smaller screens */
+  margin-top: 10px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  margin: 20px;
+}
+
+.footer-logo img {
+  margin-right: 10px; /* Adjust margin for better spacing */
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-copy {
+  text-align: right;
+}
+
+.footer-copy p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.appplaylogo {
+  width: 100px; /* Ensure consistent app store logo size */
+  height: 55px;
+}

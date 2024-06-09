@@ -27,6 +27,7 @@ export class SellComponentComponent {
 
   selectCategory(category: any) {
     this.selectedCategory = category;
+    
   }
   
 }

@@ -1,8 +1,11 @@
 .advertisement{
+  padding-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     /* Additional styles for content (optional) */
     width: 50%;  /* Adjust width as needed */
     margin: auto;  /* Optional for horizontal centering */
+    font-size: 13px;
+    font-weight: 300;
   }

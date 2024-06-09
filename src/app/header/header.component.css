@@ -12,6 +12,7 @@ body {
     background-color: #f8f8f8;
     border-bottom: 1px solid #e0e0e0;
     flex-wrap: wrap;
+  
   }
   
   .header-left,
@@ -32,38 +33,45 @@ body {
     border-radius: 4px;
     background-color: white;
     width: 250px;
+    height: 40px;
+    border: 2px solid black;
 
   }
   .language-selector {
     padding: 5px;
     margin-right: 5px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     border-radius: 4px;
-    background-color: white;
+    background-color: #f8f8f8;
+    height: 40px;
+    border: none;
+    /* border: 2px solid black; */
+    font-weight: 600;
   }
   
   .search-input {
     padding: 10px;
-    width: 500px;
+    width: 780px;
     border: 1px solid #ccc;
     border-radius: 4px 0 0 4px;
     outline: none;
+    border: 2px solid black;
   }
   
   .search-button {
     padding: 10px;
-    margin-left: 5px;
-    height: 38px;
-    /* background-color: #ccc; */
+    /* margin-left: 5px; */
+    height: 40px;
+    background-color: black;
     border: none;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
+    border: 2px solid black;
   }
   
   .search-icon {
     height: 20px;
     width: 20px;
-    /* background-color: black; */
     color: white;
   }
   
@@ -72,6 +80,13 @@ body {
     text-decoration: none;
     color: #000;
     font-weight: bold;
+    font-size: 18px;
+    height: 27px;
+    width: 70px;
+    background: #f8f8f8;
+    /* border-radius: 9px; */
+    border: none;
+    height: 35px;
   }
   
   .sell-button {

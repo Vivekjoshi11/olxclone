@@ -24,6 +24,7 @@ import { MatListModule } from '@angular/material/list';
 import { MssageComponentComponent } from './mssage-component/mssage-component.component';
 import { FormsModule } from '@angular/forms';
 import { AdvertisementComponent } from './advertisement/advertisement.component';
+import { SubheaderComponent } from './subheader/subheader.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { AdvertisementComponent } from './advertisement/advertisement.component'
     UserheaderComponent,
     UserHomeComponent,
     MssageComponentComponent,
-    AdvertisementComponent
+    AdvertisementComponent,
+    SubheaderComponent
     
   ],
   imports: [

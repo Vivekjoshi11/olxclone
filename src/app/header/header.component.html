@@ -4,26 +4,29 @@
             <img src="https://www.liblogo.com/img-logo/ol8430f3c1-olx-logo-file-olx-new-logo-png-wikimedia-commons.png" alt="OLX Logo" class="logo">
             <select id="country-selector" class="country-selector">
                 <option value="India">India</option>
+                <option value="America">America</option>
+                <option value="Canada">Canada</option>
             </select>
         </div>
         <div class="header-center">
             <input type="text" placeholder="Find Cars, Mobile Phones and more..." class="search-input">
             <button class="search-button">
-                <img src="https://img.icons8.com/ios-filled/50/000000/search.png" alt="Search Icon" class="search-icon">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M221.09 64a157.09 157.09 0 1 0 157.09 157.09A157.1 157.1 0 0 0 221.09 64Z"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"/></svg>
+            
             </button>
         </div>
         <div class="header-right">
             <select id="language-selector" class="language-selector">
                 <option value="ENGLISH">ENGLISH</option>
+                <option value="HINDI">HINDI</option>
+                <option value="SPANISH">SPANISH</option>
             </select>
-            <!-- <a href="javascript:void(0)" class="login-link" (click)="goToLogin()" >Login</a> -->
             
-
-             <!-- <button (click)="navigateToLogin()">Login</button> -->
-             <button class="login-link "><a routerLink="/login">login</a></button>
-            <button class="sell-button" id="sell-button" (click)="navigateToUser()">+ SELL</button>
-            <button class="sell-button" id="sell-button" (click)="navigateToLogin()">+ SELL</button>
+             <button class="login-link " (click)="navigateToLogin()"><a routerLink="/login">login</a></button>
+              <button class="sell-button" id="sell-button" (click)="navigateToLogin()">+ SELL</button>
         </div>
+       
     </header>
+    <app-subheader></app-subheader>
 
 

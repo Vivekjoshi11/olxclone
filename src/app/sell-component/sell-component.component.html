@@ -1,3 +1,6 @@
+<header style="background-color: rgb(240, 240, 240); height: 60px; margin-bottom: 10px;">
+
+</header>
 <div class="post-ad-container">
   <header class="post-ad-header">
     <button class="back-button">
@@ -20,11 +23,11 @@
             </mat-list-item>
           </mat-list>
         </div>
-        <div class="col-md-column" *ngIf="selectedCategory">
-          <h3>Category Details</h3>
+        <div   *ngIf="selectedCategory">
+          <!-- <h3 class="category-item ">Category Details</h3> -->
           <div>
-            <h4>{{ selectedCategory.name }}</h4>
-            <p>Details about {{ selectedCategory.name }}</p>
+            <h4 class="category-item ">{{ selectedCategory.name }}</h4>
+            <h4 class="category-item ">sell {{ selectedCategory.name }}</h4>
           </div>
         </div>
       </div>
