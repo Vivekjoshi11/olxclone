@@ -1,8 +1,14 @@
-
+<!-- <p class="advertisement">advertisement</p>
+   <div class="advertisement">
+    <div style="align-items: center;">
+    <img src="https://s0.2mdn.net/simgad/11211055491251725321">
+  </div> -->
+   <!-- </div> -->
+   <app-advertisement></app-advertisement>
    <div class="recommendations">
     <h2>Fresh recommendations</h2>
-    <div class="card-container">
-      <div class="card" *ngFor="let item of items">
+    <div class="card-container" >
+      <div class="card" *ngFor="let item of items" (click)="goToproduct()">
         <div class="card-header" *ngIf="item.featured">
           <span>FEATURED</span>
         </div>

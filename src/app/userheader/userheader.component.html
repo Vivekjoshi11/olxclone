@@ -1,0 +1,94 @@
+<header class="header">
+    <div class="header-left">
+        <img src="https://www.liblogo.com/img-logo/ol8430f3c1-olx-logo-file-olx-new-logo-png-wikimedia-commons.png"
+            alt="OLX Logo" class="logo">
+        <select id="country-selector" class="country-selector">
+            <option value="India">India</option>
+        </select>
+    </div>
+    <div class="header-center">
+        <input type="text" placeholder="Find Cars, Mobile Phones and more..." class="search-input">
+        <button class="search-button">
+            <img src="https://img.icons8.com/ios-filled/50/000000/search.png" alt="Search Icon" class="search-icon">
+        </button>
+    </div>
+    <div class="header-right">
+        <select id="language-selector" class="language-selector">
+            <option value="ENGLISH">ENGLISH</option>
+
+        </select>
+        <button class="search-button" (click)="navigateToMessage()">
+            <img src="https://www.svgrepo.com/show/144611/messages-bubble.svg" alt="message" class="search-icon">
+        </button>
+        <button class="search-button">
+
+            <img src="https://static-00.iconduck.com/assets.00/notification-icon-1842x2048-xr57og4y.png"
+                class="search-icon">
+        </button>
+        
+        <div>
+            <div class="user-avatar">
+                <img src="https://media.licdn.com/dms/image/D4D03AQElzzqBzfL00A/profile-displayphoto-shrink_800_800/0/1702826791570?e=2147483647&v=beta&t=5WbCcYn0WCX4RRUi4UqmeBaMqQRjsrRcKeB41FMVmyQ"
+                    alt="User">
+            </div>
+
+        </div>
+        
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" class="menu1">
+            <mat-icon>
+
+
+                <svg width="20px" height="20px" viewBox="0 0 1024 1024" data-aut-id="icon" class="" fill-rule="evenodd">
+                    <path class="rui-w4DG7"
+                        d="M85.392 277.333h60.331l366.336 366.336 366.336-366.336h60.331v60.331l-408.981 409.003h-35.307l-409.045-409.003z">
+                    </path>
+                </svg></mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" class="menu1" [style.width]="'300px'">
+            <div class="user-avatar" style="align-content: center;">
+                <img src="https://media.licdn.com/dms/image/D4D03AQElzzqBzfL00A/profile-displayphoto-shrink_800_800/0/1702826791570?e=2147483647&v=beta&t=5WbCcYn0WCX4RRUi4UqmeBaMqQRjsrRcKeB41FMVmyQ"
+                    alt="User">
+            </div>
+            <button mat-menu-item>
+
+                <mat-icon>perm_identity</mat-icon>
+                <span>Vicky</span>
+            </button>
+            <button mat-menu-item style="background-color: white;" >
+                <mat-icon><mat-icon>favorite_border</mat-icon></mat-icon>
+                <span>Favourait ads
+
+                </span>
+            </button>
+            <button mat-menu-item style="background-color: white;">
+                <mat-icon>notifications_off</mat-icon>
+                <span>Disable alerts</span>
+            </button>
+            <button mat-menu-item style="background-color: white;">
+                <mat-icon> list_alt</mat-icon>
+                <span>Disable alerts</span>
+            </button>
+            <button mat-menu-item style="background-color: white;">
+                <mat-icon>help_outline</mat-icon>
+                <span>Help</span>
+            </button>
+            <button mat-menu-item style="background-color: white;">
+                <mat-icon>language</mat-icon>
+                <span>Select language</span>
+            </button>
+            <button mat-menu-item style="background-color: white;">
+                <mat-icon>settings</mat-icon>
+                <span>Settings</span>
+            </button>
+            <button mat-menu-item style="background-color: white;">
+                <mat-icon>file_download</mat-icon>
+                <span>Download</span>
+            </button>
+            <button mat-menu-item style="background-color: white;">
+                <mat-icon>exit_to_app</mat-icon>
+                <span>Log out</span>
+            </button>
+        </mat-menu>
+        <button class="sell-button" id="sell-button" (click)="navigateTosell()">+ SELL</button>
+    </div>
+</header>

@@ -17,9 +17,10 @@ export class AppComponent {
     // It's generally recommended to use Angular lifecycle hooks like `ngOnInit`
     // instead of `setTimeout` in the component constructor for routing logic.
     // This ensures proper Angular initialization and avoids potential issues.
-    setTimeout(() => this.router.navigate(['/home']), 1000); // Delay in milliseconds
+    // setTimeout(() => this.router.navigate(['/home']), 1000); // Delay in milliseconds
+    this.router.navigate(['/home']);
   }
-  goToLogin() {
-    this.router.navigate(['/login']);
-  }
+  // goToLogin() {
+  //   this.router.navigate(['/login']);
+  // }
 }

@@ -1,0 +1,51 @@
+<app-userheader></app-userheader>
+
+
+
+<div class="messaging-container">
+    <div class="contacts-panel">
+      <!-- <div class="search-bar"> -->
+        <!-- <input type="text" placeholder="Search"> -->
+        <!-- <button><i class="fa fa-paper-plane"></i> </button> -->
+      <!-- </div> -->
+      <ul class="contacts-list">
+        <li *ngFor="let contact of contacts" (click)="selectContact(contact)" [class.active]="contact === selectedContact">
+          <div class="contact">
+            <img [src]="contact.avatar" alt="Avatar">
+            <div class="contact-info">
+              <h3>{{ contact.name }}</h3>
+              <p>{{ contact.lastMessage }}</p>
+            </div>
+            <span class="time">{{ contact.time }}</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="chat-panel" *ngIf="selectedContact">
+      <div class="chat-header">
+        <div class="contact-info">
+          <img [src]="selectedContact.avatar" alt="Avatar">
+          <div>
+            <h3>{{ selectedContact.name }}</h3>
+            <p>Last seen today at {{ selectedContact.lastSeen }}</p>
+          </div>
+        </div>
+        <div class="chat-actions">
+          <i class="fa fa-phone"></i>
+          <i class="fa fa-video"></i>
+        </div>
+      </div>
+      <div class="chat-body">
+        <div *ngFor="let message of selectedContact.messages" [class.sent]="message.sent" class="message">
+          <p>{{ message.text }}</p>
+          <span class="time">{{ message.time }}</span>
+        </div>
+      </div>
+      <div class="chat-footer">
+        <input type="text" placeholder="Type a message" [(ngModel)]="newMessage">
+        <button (click)="sendMessage()"><i class="fa fa-paper-plane"></i> Send
+        </button>
+      </div>
+    </div>
+  </div>
+  

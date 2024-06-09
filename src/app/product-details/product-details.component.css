@@ -130,3 +130,11 @@ body {
     align-items: center;
     margin-top: 20px;
   }
+  .advertisement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Additional styles for content (optional) */
+    width: 50%;  /* Adjust width as needed */
+    margin: auto;  /* Optional for horizontal centering */
+  }

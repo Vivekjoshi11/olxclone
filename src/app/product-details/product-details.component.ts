@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 interface Item {
   featured: boolean;
@@ -73,4 +74,10 @@ export class ProductDetailsComponent {
       date: 'TODAY'
     }
   ];
+  constructor(private router: Router) {}
+  goToproduct(): void{
+    this.router.navigate(['/productdetailpage']);
+    console.log('done');
+  }
 }
+

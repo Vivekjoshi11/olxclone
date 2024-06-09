@@ -1,1 +1,35 @@
-<p>sell-component works!</p>
+<div class="post-ad-container">
+  <header class="post-ad-header">
+    <button class="back-button">
+      <i class="fa fa-arrow-left"></i>
+    </button>
+    <h1>POST YOUR AD</h1>
+  </header>
+  <div class="category-selection">
+    <h2>CHOOSE A CATEGORY</h2>
+
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <mat-list class="category-list">
+            <mat-list-item *ngFor="let category of categories" (click)="selectCategory(category)"
+              class="category-item ">
+              <mat-icon matListIcon>{{ category.icon }}</mat-icon>
+              <h4 matLine>{{ category.name }}</h4>
+              <mat-icon matListIcon>chevron_right</mat-icon>
+            </mat-list-item>
+          </mat-list>
+        </div>
+        <div class="col-md-column" *ngIf="selectedCategory">
+          <h3>Category Details</h3>
+          <div>
+            <h4>{{ selectedCategory.name }}</h4>
+            <p>Details about {{ selectedCategory.name }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
