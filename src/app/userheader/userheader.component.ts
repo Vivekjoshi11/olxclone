@@ -33,6 +33,10 @@ export class UserheaderComponent {
     this.router.navigate(['viewEditProfile']);
     console.log('done')
   }
+  navigateToMyads(): void {
+    this.router.navigate(['Myads']);
+    console.log('done')
+  }
   closePanel() {
     this.isOpen = false;
   }
