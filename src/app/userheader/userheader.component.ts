@@ -29,6 +29,10 @@ export class UserheaderComponent {
     this.router.navigate(['messageComponent']);
     console.log('done')
   }
+  navigateToViewEdit(): void {
+    this.router.navigate(['viewEditProfile']);
+    console.log('done')
+  }
   closePanel() {
     this.isOpen = false;
   }

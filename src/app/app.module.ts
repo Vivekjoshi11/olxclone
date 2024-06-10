@@ -25,6 +25,10 @@ import { MssageComponentComponent } from './mssage-component/mssage-component.co
 import { FormsModule } from '@angular/forms';
 import { AdvertisementComponent } from './advertisement/advertisement.component';
 import { SubheaderComponent } from './subheader/subheader.component';
+import { SettingsComponent } from './settings/settings.component';
+import { FavouraiteadsComponent } from './favouraiteads/favouraiteads.component';
+import { MyAdsComponent } from './my-ads/my-ads.component';
+import { ViewEditProfileComponent } from './view-edit-profile/view-edit-profile.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +45,11 @@ import { SubheaderComponent } from './subheader/subheader.component';
     UserHomeComponent,
     MssageComponentComponent,
     AdvertisementComponent,
-    SubheaderComponent
+    SubheaderComponent,
+    SettingsComponent,
+    FavouraiteadsComponent,
+    MyAdsComponent,
+    ViewEditProfileComponent
     
   ],
   imports: [

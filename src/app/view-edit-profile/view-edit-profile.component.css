@@ -1,0 +1,94 @@
+.edit-profile-container {
+    display: flex;
+    font-family: Arial, sans-serif;
+  }
+  
+  .side-bar {
+    width: 20%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-right: 1px solid #ddd;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  .view-profile-btn {
+    width: 80%;
+    padding: 10px;
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .edit-profile-form {
+    width: 80%;
+    padding: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .discard-btn,
+  .save-btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .discard-btn {
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  .save-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .unlink-btn {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
