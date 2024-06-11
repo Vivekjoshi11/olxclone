@@ -9,6 +9,8 @@ import { MssageComponentComponent } from './mssage-component/mssage-component.co
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ProductDetailsNextComponent } from './product-details-next/product-details-next.component';
 import { ViewEditProfileComponent } from './view-edit-profile/view-edit-profile.component';
+import { MyAdsComponent } from './my-ads/my-ads.component';
+import { UserheaderComponent } from './userheader/userheader.component';
 
 
 
@@ -45,6 +47,14 @@ const routes: Routes = [
   {
     path: 'viewEditProfile',
     component: ViewEditProfileComponent
+  },
+  {
+    path: 'Myads',
+    component: MyAdsComponent
+  },
+  {
+    path: 'userhome',
+    component: UserHomeComponent
   },
   
 ];

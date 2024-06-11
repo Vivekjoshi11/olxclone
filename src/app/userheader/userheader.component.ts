@@ -37,6 +37,10 @@ export class UserheaderComponent {
     this.router.navigate(['Myads']);
     console.log('done')
   }
+  navigateToHome(): void {
+    this.router.navigate(['userhome']);
+    console.log('done')
+  }
   closePanel() {
     this.isOpen = false;
   }
