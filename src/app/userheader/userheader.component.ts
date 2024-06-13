@@ -41,6 +41,18 @@ export class UserheaderComponent {
     this.router.navigate(['userhome']);
     console.log('done')
   }
+  navigateToSettings(): void {
+    this.router.navigate(['settings']);
+    console.log('done')
+  }
+  navigateToNuynillpackages(): void {
+    this.router.navigate(['Buybillingpackages']);
+    console.log('done')
+  }
+  navigateToBuy_bisiness(): void {
+    this.router.navigate(['BuyBisinessComponent']);
+    console.log('done')
+  }
   closePanel() {
     this.isOpen = false;
   }

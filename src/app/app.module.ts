@@ -29,6 +29,14 @@ import { SettingsComponent } from './settings/settings.component';
 import { FavouraiteadsComponent } from './favouraiteads/favouraiteads.component';
 import { MyAdsComponent } from './my-ads/my-ads.component';
 import { ViewEditProfileComponent } from './view-edit-profile/view-edit-profile.component';
+import { PrivacyComponent } from './privacy/privacy.component';
+import { NotificationsComponent } from './notifications/notifications.component';
+import { ChatSafetyTipsComponent } from './chat-safety-tips/chat-safety-tips.component';
+import { PasswordComponent } from './password/password.component';
+import { BuyBillingPackaesComponent } from './buy-billing-packaes/buy-billing-packaes.component';
+import { BuyBisinessComponent } from './buy-bisiness/buy-bisiness.component';
+import { SearchpageComponent } from './searchpage/searchpage.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +57,15 @@ import { ViewEditProfileComponent } from './view-edit-profile/view-edit-profile.
     SettingsComponent,
     FavouraiteadsComponent,
     MyAdsComponent,
-    ViewEditProfileComponent
+    ViewEditProfileComponent,
+    PrivacyComponent,
+    NotificationsComponent,
+    ChatSafetyTipsComponent,
+    PasswordComponent,
+    BuyBillingPackaesComponent,
+    BuyBisinessComponent,
+    SearchpageComponent,
+    SidebarComponent
     
   ],
   imports: [

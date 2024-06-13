@@ -82,7 +82,7 @@ button:hover {
 } */
 
 
-
+/* 
 body {
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
@@ -104,9 +104,9 @@ body {
     border-right: 1px solid #e0e0e0;
     padding: 20px;
     background-color: #fafafa;
-    height: calc(100vh - 100px); /* Adjust height as needed */
+    height: calc(100vh - 100px); 
     position: sticky;
-    top: 50px; /* Adjust top value as needed */
+    top: 50px; 
   }
   
   .sidebar ul {
@@ -133,6 +133,67 @@ body {
     flex: 3;
     padding: 20px;
     overflow-y: auto;
-    height: calc(100vh - 100px); /* Adjust height as needed */
+    height: calc(100vh - 100px); 
+  } */
+  
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
   }
   
+  .container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .help-text {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .show-password {
+    float: right;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  
+  .show-password:hover {
+    color: #4CAF50;
+  }

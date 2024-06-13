@@ -1,1 +1,20 @@
-<p>settings works!</p>
+<app-userheader></app-userheader>
+<app-subheader></app-subheader>
+<!-- <app-advertisement></app-advertisement> -->
+<div class="container">
+    <div class="sidebar">
+      <ul>
+        <li><a routerLink="/settings" routerLinkActive="Disable" style="color: black; font-weight: 900;">Privacy</a></li>
+        <li><a routerLink="/notifications" routerLinkActive="active-link" >Notifications</a></li>
+        <li><a routerLink="/logout" routerLinkActive="active-link" (click)="logout()">Logout from all devices</a></li>
+        <li><a routerLink="/delete-account" routerLinkActive="active-link" (click)="alertdelet()">Delete account</a></li>
+        <li><a routerLink="/chat-safety-tips" routerLinkActive="active-link">Chat safety tips</a></li>
+      </ul>
+    </div>
+    <div class="main-content">
+     
+        <app-privacy></app-privacy>
+    </div>
+  </div>
+  
+<app-footer></app-footer>

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-subheader',
@@ -6,6 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './subheader.component.css'
 })
 export class SubheaderComponent {
+
+  @Input() isOpen: boolean = false;
+  constructor(
+    private router: Router
+  ) { }
 
   megaMenuVisible = false;
 
@@ -16,5 +22,8 @@ export class SubheaderComponent {
   hideMegaMenu() {
     this.megaMenuVisible = false;
   }
-  
+  navigateTosearchpage(): void {
+    this.router.navigate(['searchpage']);
+    // console.log('done')
+  }
 }

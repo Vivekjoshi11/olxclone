@@ -1,0 +1,42 @@
+<body>
+    <div class="container">
+        <div class="back-arrow">
+            <i class="fas fa-arrow-left"></i>
+        </div>
+        <div class="form-container">
+            <h2>SELECT OPTIONS TO SHOW PACKAGES</h2>
+            <form>
+                <div class="form-group">
+                    <label for="category">Select Category *</label>
+                    <select id="category" required>
+                        <option value="">Select Category</option>
+                        <option value="">Cars</option>
+                        <option value="">Bike</option>
+                        <option value="">Proprties</option>
+                        <option value="">Mobile</option>
+                        <option value="">Furniture</option>
+                        <option value="">Fashion</option>
+                        <option value="">Books sports and hobbies</option>
+                        <option value="">Pets</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="subcategory">Select Subcategory</label>
+                    <select id="subcategory">
+                        <option value="">Select Subcategory</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" value="Ahmedabad, Gujarat" disabled>
+                </div>
+                <button type="submit" disabled>Show packages</button>
+            </form>
+            <div class="info-text">
+                <i class="fas fa-info-circle"></i> The package you choose will only be valid for the selected category and location.
+            </div>
+        </div>
+    </div>
+</body>

@@ -11,6 +11,12 @@ import { ProductDetailsNextComponent } from './product-details-next/product-deta
 import { ViewEditProfileComponent } from './view-edit-profile/view-edit-profile.component';
 import { MyAdsComponent } from './my-ads/my-ads.component';
 import { UserheaderComponent } from './userheader/userheader.component';
+import { SettingsComponent } from './settings/settings.component';
+import { PrivacyComponent } from './privacy/privacy.component';
+import { NotificationsComponent } from './notifications/notifications.component';
+import { ChatSafetyTipsComponent } from './chat-safety-tips/chat-safety-tips.component';
+import { BuyBillingPackaesComponent } from './buy-billing-packaes/buy-billing-packaes.component';
+import { SearchpageComponent } from './searchpage/searchpage.component';
 
 
 
@@ -55,6 +61,21 @@ const routes: Routes = [
   {
     path: 'userhome',
     component: UserHomeComponent
+  },
+  { path: 'privacy', component: PrivacyComponent },
+  { path: 'notifications', component: NotificationsComponent },
+  { path: 'chat-safety-tips', component: ChatSafetyTipsComponent },
+  {
+    path: 'settings',
+    component: SettingsComponent
+  },
+  {
+    path: 'Buybillingpackages',
+    component: BuyBillingPackaesComponent
+  },
+  {
+    path: 'searchpage',
+    component: SearchpageComponent
   },
   
 ];

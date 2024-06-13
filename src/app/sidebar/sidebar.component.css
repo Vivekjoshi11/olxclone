@@ -1,0 +1,392 @@
+/* .sidebar {
+    padding: 20px;
+    background-color: white;
+    max-width: 300px;
+  }
+  
+  .sidebar h3 {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 10px 0;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .brands {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .brand {
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  .all-brands {
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+  }
+  
+  .all-brands h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .all-brands ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .all-brands ul li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .all-brands ul li label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .all-brands ul li input[type="checkbox"] {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .all-brands ul li span {
+    font-size: 14px;
+    color: #333;
+  }
+
+  .budget-container {
+    max-width: 300px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.budget-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.budget-header h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.toggle-icon {
+    cursor: pointer;
+    font-size: 16px;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.budget-container.collapsed .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.budget-options {
+    margin: 20px 0;
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.option:hover {
+    background: #f0f0f0;
+}
+
+.car-count {
+    font-weight: bold;
+    color: #666;
+}
+
+.range-slider {
+    margin-top: 20px;
+}
+
+.range-slider input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.range-labels {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apply-button {
+    width: 90%;
+    padding: 10px;
+    background-color: #d3d3d3;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    cursor: not-allowed;
+    margin-top: 10px;
+}
+
+.apply-button.enabled {
+    background-color: #007bff;
+    cursor: pointer;
+}
+   */
+
+
+   /* General Styles */
+.sidebar {
+    padding: 20px;
+    background-color: white;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.sidebar h3 {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    word-wrap: break-word; /* Ensure long text breaks */
+}
+
+/* Brands Section */
+.brands {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brand {
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    flex: 1 1 45%; /* Adjust to make it responsive */
+    box-sizing: border-box;
+    text-align: center;
+    word-wrap: break-word; /* Ensure long text breaks */
+}
+
+/* All Brands and Other Lists */
+.all-brands {
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.all-brands h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.all-brands ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.all-brands ul li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.all-brands ul li label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    word-wrap: break-word; /* Ensure long text breaks */
+}
+
+.all-brands ul li input[type="checkbox"] {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+}
+
+.all-brands ul li span {
+    font-size: 14px;
+    color: #333;
+    word-wrap: break-word; /* Ensure long text breaks */
+}
+
+/* Budget Section */
+.budget-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.budget-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.budget-header h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.toggle-icon {
+    cursor: pointer;
+    font-size: 16px;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.budget-container.collapsed .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.budget-options {
+    margin: 20px 0;
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    word-wrap: break-word; /* Ensure long text breaks */
+}
+
+.option:hover {
+    background: #f0f0f0;
+}
+
+.car-count {
+    font-weight: bold;
+    color: #666;
+}
+
+.range-slider {
+    margin-top: 20px;
+}
+
+.range-slider input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.range-labels {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apply-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d3d3d3;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    cursor: not-allowed;
+    margin-top: 10px;
+}
+
+.apply-button.enabled {
+    background-color: #007bff;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .sidebar {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .brand {
+        flex: 1 1 100%;
+    }
+
+    .budget-container {
+        padding: 10px;
+    }
+
+    .all-brands {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar h3 {
+        font-size: 14px;
+    }
+
+    .all-brands h3,
+    .budget-header h3 {
+        font-size: 14px;
+    }
+
+    .option {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .car-count {
+        margin-top: 5px;
+    }
+    
+    .sidebar ul li a,
+    .all-brands ul li span,
+    .option {
+        font-size: 12px;
+    }
+    
+    .brand {
+        font-size: 12px;
+    }
+}
