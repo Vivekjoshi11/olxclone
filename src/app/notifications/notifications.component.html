@@ -5,8 +5,8 @@
       <ul>
         <li><a routerLink="/settings" routerLinkActive="active-link">Privacy</a></li>
         <li><a routerLink="/notifications" routerLinkActive="active-link">Notifications</a></li>
-        <li><a routerLink="/logout" routerLinkActive="active-link">Logout from all devices</a></li>
-        <li><a routerLink="/delete-account" routerLinkActive="active-link">Delete account</a></li>
+        <li><a routerLink="/logout" routerLinkActive="active-link" (click)="logout()">Logout from all devices</a></li>
+        <li><a routerLink="/delete-account" routerLinkActive="active-link" (click)="alertdelet()">Delete account</a></li>
         <li><a routerLink="/chat-safety-tips" routerLinkActive="active-link">Chat safety tips</a></li>
       </ul>
     </div>

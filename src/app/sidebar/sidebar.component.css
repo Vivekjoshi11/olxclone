@@ -164,11 +164,15 @@
 
 
    /* General Styles */
+   
 .sidebar {
     padding: 20px;
     background-color: white;
     max-width: 300px;
     box-sizing: border-box;
+    overflow-y: auto;
+    max-height: 950px;
+
 }
 
 .sidebar h3 {
@@ -188,10 +192,10 @@
 .sidebar ul li a {
     text-decoration: none;
     color: #333;
-    word-wrap: break-word; /* Ensure long text breaks */
+    word-wrap: break-word; 
 }
 
-/* Brands Section */
+
 .brands {
     display: flex;
     flex-wrap: wrap;
@@ -202,13 +206,13 @@
     padding: 10px;
     margin: 5px;
     border-radius: 5px;
-    flex: 1 1 45%; /* Adjust to make it responsive */
+    flex: 1 1 45%;
     box-sizing: border-box;
     text-align: center;
-    word-wrap: break-word; /* Ensure long text breaks */
+    word-wrap: break-word; 
 }
 
-/* All Brands and Other Lists */
+
 .all-brands {
     padding: 20px;
     background-color: #f7f7f7;
@@ -237,7 +241,7 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    word-wrap: break-word; /* Ensure long text breaks */
+    word-wrap: break-word;
 }
 
 .all-brands ul li input[type="checkbox"] {
@@ -249,10 +253,10 @@
 .all-brands ul li span {
     font-size: 14px;
     color: #333;
-    word-wrap: break-word; /* Ensure long text breaks */
+    word-wrap: break-word;
 }
 
-/* Budget Section */
+
 .budget-container {
     background: white;
     border-radius: 8px;
@@ -298,7 +302,8 @@
     margin-bottom: 10px;
     cursor: pointer;
     transition: background 0.3s ease;
-    word-wrap: break-word; /* Ensure long text breaks */
+    word-wrap: break-word;
+
 }
 
 .option:hover {
@@ -325,7 +330,7 @@
 }
 
 .apply-button {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     background-color: #d3d3d3;
     border: none;
@@ -341,7 +346,7 @@
     cursor: pointer;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
     .sidebar {
         max-width: 100%;
