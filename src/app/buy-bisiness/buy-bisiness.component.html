@@ -1,1 +1,44 @@
-<p>buy-bisiness works!</p>
+<app-userheader></app-userheader>
+<app-subheader></app-subheader>
+<div class="container">
+    <div class="sidebar">
+      <!-- <h2>Bought Packages</h2> -->
+      <ul>
+        <li style="font-weight: bold;"><a >Bought Packages</a></li>
+        <li (click)="navigateToBilling()" ><a >Billing</a></li>
+        <li (click)="navigateToInvoices()" ><a> Invoices</a></li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <!-- <div class="tabs">
+        <button class="tab active" (click)="selectTab('active')">Active</button>
+        <button class="tab" (click)="selectTab('scheduled')">Scheduled</button>
+        <button class="tab" (click)="selectTab('expired')">Expired</button>
+      </div> -->
+      <div class="tabs">
+        <button class="tab" [class.active]="selectedTab === 'active'" (click)="selectTab('active')">Active</button>
+        <button class="tab" [class.active]="selectedTab === 'scheduled'" (click)="selectTab('scheduled')">Scheduled</button>
+        <button class="tab" [class.active]="selectedTab === 'expired'" (click)="selectTab('expired')">Expired</button>
+      </div>
+      <div class="content">
+        <ng-container *ngIf="selectedTab === 'active'">
+          <div class="empty-state">
+            <img src="https://statics.olx.in/external/base/img/empty_orders.webp" alt="No Active Packages">
+            <h3>Nothing here...</h3>
+            <p>You don't have any active packages</p>
+          </div>
+        </ng-container>
+        <ng-container *ngIf="selectedTab === 'scheduled'">
+            <img src="https://statics.olx.in/external/base/img/empty_orders.webp" alt="No Active Packages">
+            <h3>Nothing here...</h3>
+          <p> there is no packages are sheduled</p>
+        </ng-container>
+        <ng-container *ngIf="selectedTab === 'expired'">
+            <img src="https://statics.olx.in/external/base/img/empty_orders.webp" alt="No Active Packages">
+            <h3>Nothing here...</h3>
+         <p>expired</p>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
