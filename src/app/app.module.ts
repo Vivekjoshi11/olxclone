@@ -37,6 +37,8 @@ import { BuyBillingPackaesComponent } from './buy-billing-packaes/buy-billing-pa
 import { BuyBisinessComponent } from './buy-bisiness/buy-bisiness.component';
 import { SearchpageComponent } from './searchpage/searchpage.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { BillingComponent } from './billing/billing.component';
+import { InvoicesComponent } from './invoices/invoices.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +67,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     BuyBillingPackaesComponent,
     BuyBisinessComponent,
     SearchpageComponent,
-    SidebarComponent
+    SidebarComponent,
+    BillingComponent,
+    InvoicesComponent
     
   ],
   imports: [

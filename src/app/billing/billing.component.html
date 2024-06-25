@@ -1,0 +1,83 @@
+<app-header></app-header>
+<app-subheader></app-subheader>
+<div class="container">
+    <div class="sidebar">
+        <!-- <h2>Bought Packages</h2> -->
+        <ul>
+            <li (click)="navigateToBuybisiness()"><a>Bought Packages</a></li>
+            <li (click)="navigateToBilling()" style="font-weight: bold;"><a>Billing</a></li>
+            <li (click)="navigateToInvoices()"><a> Invoices</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h2>Billing Information</h2>
+        <form>
+          <fieldset>
+            <legend>Customer Information</legend>
+            <div class="form-group">
+              <label for="gst">Do you have a GST Number?</label>
+              <select id="gst" name="gst">
+                <option value="">Do you have a GST Number?</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+              <label for="customerName">Customer Name</label>
+              <input type="text" id="customerName" name="customerName">
+            </div>
+            <div class="form-group">
+              <label for="businessName">Business Name</label>
+              <input type="text" id="businessName" name="businessName">
+            </div>
+            <div class="form-group">
+              <label for="gstNumber">GST Number</label>
+              <input type="text" id="gstNumber" name="gstNumber">
+            </div>
+            <button type="button" class="verify-button">Verify GSTIN</button>
+          </fieldset>
+    
+          <fieldset>
+            <legend>Customer Address</legend>
+            <div class="form-group">
+              <label for="address1">Address Line 1</label>
+              <input type="text" id="address1" name="address1">
+            </div>
+            <div class="form-group">
+              <label for="address2">Address Line 2</label>
+              <input type="text" id="address2" name="address2">
+            </div>
+            <div class="form-group">
+              <label for="state">State</label>
+              <select id="state" name="state">
+                <option value="">Select State</option>
+                <!-- Add state options here -->
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="city">City</label>
+              <input type="text" id="city" name="city">
+            </div>
+            <div class="form-group">
+              <label for="zipCode">Zip Code</label>
+              <input type="text" id="zipCode" name="zipCode">
+            </div>
+            <div class="form-group">
+              <input type="checkbox" id="addressInventory" name="addressInventory">
+              <label for="addressInventory">Address for inventory</label>
+            </div>
+          </fieldset>
+    
+          <button type="submit" class="save-button">Save changes</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+<app-footer></app-footer>

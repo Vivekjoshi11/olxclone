@@ -53,6 +53,11 @@ export class UserheaderComponent {
     this.router.navigate(['BuyBisinessComponent']);
     console.log('done')
   }
+  navigateToBuybisiness(): void {
+    this.router.navigate(['buybisinesspackages']);
+    console.log('done')
+  }
+  
   closePanel() {
     this.isOpen = false;
   }

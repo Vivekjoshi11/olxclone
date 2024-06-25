@@ -17,6 +17,9 @@ import { NotificationsComponent } from './notifications/notifications.component'
 import { ChatSafetyTipsComponent } from './chat-safety-tips/chat-safety-tips.component';
 import { BuyBillingPackaesComponent } from './buy-billing-packaes/buy-billing-packaes.component';
 import { SearchpageComponent } from './searchpage/searchpage.component';
+import { BuyBisinessComponent } from './buy-bisiness/buy-bisiness.component';
+import { BillingComponent } from './billing/billing.component';
+import { InvoicesComponent } from './invoices/invoices.component';
 
 
 
@@ -76,6 +79,18 @@ const routes: Routes = [
   {
     path: 'searchpage',
     component: SearchpageComponent
+  },
+  {
+    path: 'buybisinesspackages',
+    component: BuyBisinessComponent
+  },
+  {
+    path: 'billing',
+    component: BillingComponent
+  },
+  {
+    path: 'invoices',
+    component: InvoicesComponent
   },
   
 ];
