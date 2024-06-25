@@ -10,11 +10,48 @@
         </ul>
     </div>
     <div class="main-content">
-        <div class="centercontent">
+        <!-- <div class="centercontent">
             <img src="https://statics.olx.in/external/base/img/illus-bills.webp" alt="">
             <h3>You don't have invoices</h3>
             <p>Haven't you tried our featured ads yet? Increase your views!</p>
-        </div>
+        </div> -->
+        <div class="ads-page-container">
+            <!-- <div class="header">
+              <h2>ADS</h2>
+              <h2>FAVOURITES</h2>
+            </div> -->
+            <!-- <div class="ad-banner">
+              <p>Want to sell more?</p>
+              <button class="packages-button">Show me packages</button>
+            </div> -->
+            <div class="search-filter">
+              <input type="text" placeholder="Search by Ad Title" class="search-input"/>
+              <div class="filter-buttons">
+                <button [class.active]="selectedFilter === 'all'" (click)="selectFilter('all')">View all (1)</button>
+                <button [class.active]="selectedFilter === 'active'" (click)="selectFilter('active')">Active  (0)</button>
+                <button [class.active]="selectedFilter === 'inactive'" (click)="selectFilter('inactive')">Inactive  (0)</button>
+                <button [class.active]="selectedFilter === 'pending'" (click)="selectFilter('pending')">Pending  (1)</button>
+                <button [class.active]="selectedFilter === 'moderated'" (click)="selectFilter('moderated')">Moderated  (0)</button>
+              </div>
+            </div>
+            <div class="ads-list">
+              <div class="ad-item" *ngFor="let ad of ads" [class.pending]="ad.status === 'pending'">
+                <div class="ad-details">
+                  <img [src]="ad.image" alt="Ad Image"/>
+                  <div class="ad-info">
+                    <p><strong>{{ ad.title }}</strong></p>
+                    <p>From: {{ ad.fromDate }} To: {{ ad.toDate }}</p>
+                    <p>Price: {{ ad.price }}</p>
+                    <p>Status: {{ ad.status | uppercase }}</p>
+                  </div>
+                </div>
+                <div class="ad-actions">
+                  <p>{{ ad.statusMessage }}</p>
+                  <button>Print</button>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
 </div>
 

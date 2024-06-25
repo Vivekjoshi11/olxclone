@@ -22,10 +22,39 @@
       </div>
       <div class="content">
         <ng-container *ngIf="selectedTab === 'active'">
-          <div class="empty-state">
-            <img src="https://statics.olx.in/external/base/img/empty_orders.webp" alt="No Active Packages">
-            <h3>Nothing here...</h3>
-            <p>You don't have any active packages</p>
+          <div class="ads-page-container">
+          
+            <!-- <div class="ad-banner">
+              <p>Want to sell more?</p>
+              <button class="packages-button">Show me packages</button>
+            </div> -->
+            <div class="search-filter">
+              <input type="text" placeholder="Search by Ad Title" class="search-input"/>
+              <div class="filter-buttons">
+                <button [class.active]="selectedFilter === 'all'" (click)="selectFilter('all')">View all (1)</button>
+                <button [class.active]="selectedFilter === 'active'" (click)="selectFilter('active')">Active (0)</button>
+                <button [class.active]="selectedFilter === 'inactive'" (click)="selectFilter('inactive')">Inactive  (0)</button>
+                <button [class.active]="selectedFilter === 'pending'" (click)="selectFilter('pending')">Pending order (1)</button>
+                <!-- <button [class.active]="selectedFilter === 'moderated'" (click)="selectFilter('moderated')">Moderated Ads (0)</button> -->
+              </div>
+            </div>
+            <div class="ads-list">
+              <div class="ad-item" *ngFor="let ad of ads" [class.pending]="ad.status === 'pending'">
+                <div class="ad-details">
+                  <img [src]="ad.image" alt="Ad Image"/>
+                  <div class="ad-info">
+                    <p><strong>{{ ad.title }}</strong></p>
+                    <p>From: {{ ad.fromDate }} To: {{ ad.toDate }}</p>
+                    <p>Price: {{ ad.price }}</p>
+                    <p>Status: {{ ad.status | uppercase }}</p>
+                  </div>
+                </div>
+                <div class="ad-actions">
+                  <!-- <p>{{ ad.statusMessage }}</p> -->
+                  <button>Detail</button>
+                </div>
+              </div>
+            </div>
           </div>
         </ng-container>
         <ng-container *ngIf="selectedTab === 'scheduled'">
