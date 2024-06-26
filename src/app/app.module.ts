@@ -39,6 +39,8 @@ import { SearchpageComponent } from './searchpage/searchpage.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { BillingComponent } from './billing/billing.component';
 import { InvoicesComponent } from './invoices/invoices.component';
+import { HelpCenterComponent } from './help-center/help-center.component';
+import { PostAdFormComponent } from './post-ad-form/post-ad-form.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +71,9 @@ import { InvoicesComponent } from './invoices/invoices.component';
     SearchpageComponent,
     SidebarComponent,
     BillingComponent,
-    InvoicesComponent
+    InvoicesComponent,
+    HelpCenterComponent,
+    PostAdFormComponent
     
   ],
   imports: [

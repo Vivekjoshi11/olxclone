@@ -1,0 +1,124 @@
+.help-center-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .alerts {
+    margin-bottom: 20px;
+  }
+  
+  .alert {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .alert-warning {
+    background-color: #ffcccc;
+    color: #cc0000;
+  }
+  
+  .alert-info {
+    background-color: #ccf2ff;
+    color: #0066cc;
+  }
+  
+  .search-bar {
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #e6e6e6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #d4d4d4;
+  }
+
+  .sell-button {
+    padding: 10px 20px;
+    background-color: #ffc107;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+  }
+  
+
+
+.footer {
+    background-color: #0a2e32;
+    color: white;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-left,
+.footer-right {
+    display: flex;
+    align-items: center;
+}
+
+.help-center,
+.language {
+    margin-right: 20px;
+}
+
+.language {
+    border: 1px solid white;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.language span {
+    cursor: pointer;
+}

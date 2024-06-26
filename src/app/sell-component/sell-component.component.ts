@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sell-component',
@@ -28,6 +29,15 @@ export class SellComponentComponent {
   selectCategory(category: any) {
     this.selectedCategory = category;
     
+  }
+
+  constructor(
+    private router: Router
+  ) { }
+
+  navigateToAd_sell(): void {
+    this.router.navigate(['ad-sell']);
+    console.log('done')
   }
   
 }

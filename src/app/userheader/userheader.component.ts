@@ -61,6 +61,10 @@ export class UserheaderComponent {
     this.router.navigate(['home']);
     console.log('done')
   }
+  navigateToHelp(): void {
+    this.router.navigate(['help']);
+    console.log('done')
+  }
   
   closePanel() {
     this.isOpen = false;

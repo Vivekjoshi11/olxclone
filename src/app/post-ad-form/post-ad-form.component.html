@@ -1,0 +1,223 @@
+<!-- 
+<div class="post-ad-form">
+    <h1>Post Your Ad</h1>
+  
+    <form>
+      <div class="form-group">
+        <label for="category">Selected Category</label>
+        <input type="text" id="category" placeholder="Select" />
+      </div>
+  
+      <div class="form-group">
+        <label for="details">Include Some Details</label>
+        <input type="text" id="details" placeholder="Enter details" />
+      </div>
+  
+      <div class="form-group">
+        <label for="price">Set a Price</label>
+        <input type="number" id="price" placeholder="Price" />
+      </div>
+  
+      <div class="form-group">
+        <label for="photos">Upload up to 20 Photos</label>
+        <div class="photo-upload">
+         
+          <input type="file" id="photos" multiple />
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="location">Confirm Your Location</label>
+        <input type="text" id="location" placeholder="Enter location" />
+      </div>
+  
+      <div class="form-group">
+        <label for="contact">Review Your Details</label>
+        <input type="text" id="contact" placeholder="Your name" />
+        <input type="tel" id="phone" placeholder="Your phone number" />
+      </div>
+  
+      <button type="submit">Post Ad</button>
+    </form>
+  </div>
+   -->
+
+   <div class="post-ad-container">
+    <h1>POST YOUR AD</h1>
+    
+    <div class="category-section">
+      <h2>SELECTED CATEGORY</h2>
+      <p>Cars / Cars <a href="#">Change</a></p>
+    </div>
+    
+    <div class="details-section">
+      <h2>INCLUDE SOME DETAILS</h2>
+      
+      <form>
+        <div class="form-group">
+          <label for="brand">Brand *</label>
+          <select id="brand">
+            <option value="">Select Brand</option>
+            <!-- Add brand options here -->
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="year">Year *</label>
+          <input type="text" id="year" />
+        </div>
+        
+        <div class="form-group">
+          <label for="fuel">Fuel *</label>
+          <div class="fuel-options">
+            <button type="button">CNG & Hybrids</button>
+            <button type="button">Diesel</button>
+            <button type="button">Electric</button>
+            <button type="button">LPG</button>
+            <button type="button">Petrol</button>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="transmission">Transmission *</label>
+          <div class="transmission-options">
+            <button type="button">Automatic</button>
+            <button type="button">Manual</button>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="km-driven">KM driven *</label>
+          <input type="text" id="km-driven" maxlength="6" />
+          <span class="char-count">0 / 6</span>
+        </div>
+        
+        <div class="form-group">
+          <label for="owners">No. of Owners *</label>
+          <div class="owners-options">
+            <button type="button">1st</button>
+            <button type="button">2nd</button>
+            <button type="button">3rd</button>
+            <button type="button">4th</button>
+            <button type="button">4+</button>
+          </div>
+        </div>
+        <div class="form-group">
+            <label for="km-driven">Ad Title *</label>
+            <input type="text" id="km-driven" maxlength="70" />
+            <span class="char-count">0 / 70</span>
+          </div>
+          <div class="form-group" >
+            <label for="km-driven">Description *</label>
+            <input type="text" id="km-driven" style="height: 60px;" maxlength="4096" />
+            <span class="char-count">0 / 4096</span>
+          </div>
+          <div class="form-group" >
+            <label for="km-driven">Set a price *</label>
+            <input type="text" id="km-driven" style="height: 60px;" maxlength="4096" />
+            <!-- <span class="char-count">0 / 4096</span> -->
+          </div>
+          <div class="form-group">
+          <div class="photo-upload-container">
+            <h2>UPLOAD UP TO 20 PHOTOS</h2>
+            <div class="photo-grid">
+                <div class="photo-cell">
+                    <input type="file" id="file1" accept="image/*">
+                    <label for="file1">
+                        <img src="camera_icon.png" alt="Add Photo">
+                    </label>
+                </div>
+                
+                <div class="photo-cell">
+                    <input type="file" id="file2" accept="image/*">
+                    <label for="file2">
+                        <img src="camera_icon.png" alt="Add Photo">
+                    </label>
+                </div>
+                <div class="photo-cell">
+                    <input type="file" id="file2" accept="image/*">
+                    <label for="file2">
+                        <img src="camera_icon.png" alt="Add Photo">
+                    </label>
+                </div>
+                <div class="photo-cell">
+                    <input type="file" id="file2" accept="image/*">
+                    <label for="file2">
+                        <img src="camera_icon.png" alt="Add Photo">
+                    </label>
+                </div>
+                <div class="photo-cell">
+                    <input type="file" id="file2" accept="image/*">
+                    <label for="file2">
+                        <img src="camera_icon.png" alt="Add Photo">
+                    </label>
+                </div>
+                <div class="photo-cell">
+                    <input type="file" id="file2" accept="image/*">
+                    <label for="file2">
+                        <img src="camera_icon.png" alt="Add Photo">
+                    </label>
+                </div>
+                <div class="photo-cell">
+                    <input type="file" id="file2" accept="image/*">
+                    <label for="file2">
+                        <img src="camera_icon.png" alt="Add Photo">
+                    </label>
+                </div>
+                <div class="photo-cell">
+                    <input type="file" id="file2" accept="image/*">
+                    <label for="file2">
+                        <img src="camera_icon.png" alt="Add Photo">
+                    </label>
+                </div>
+                <div class="photo-cell">
+                    <input type="file" id="file2" accept="image/*">
+                    <label for="file2">
+                        <img src="camera_icon.png" alt="Add Photo">
+                    </label>
+                </div>
+            </div>
+            <div class="mandatory-field">This field is mandatory</div>
+        </div>
+        <div class="section">
+            <h2>CONFIRM YOUR LOCATION</h2>
+            <div class="tabs">
+                <div class="tab active">LIST</div>
+                <div class="tab">CURRENT LOCATION</div>
+            </div>
+            <div class="form-group">
+                <label for="state">State *</label>
+                <select id="state" required>
+                    <option value="">Select a state</option>
+                    <!-- Add options for states here -->
+                </select>
+                <div class="mandatory">This field is mandatory</div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>REVIEW YOUR DETAILS</h2>
+            <div class="details">
+                <img style="height: 50px; width: 50px;" src="https://th.bing.com/th/id/OIP.GHGGLYe7gDfZUzF_tElxiQHaHa?rs=1&pid=ImgDetMain" alt="Profile Picture">
+                <div class="edit-icon">
+                    <label for="profile-pic">
+                        <img src="https://th.bing.com/th/id/OIP.fuaJLF-qmrT5gP7eXrRm2wHaHa?rs=1&pid=ImgDetMain" style="height: 15px; width: 15px;" alt="Edit">
+                    </label>
+                    <input type="file" id="profile-pic" style="display: none;">
+                </div>
+                <div class="info">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" value="vicky dev" maxlength="30">
+                    <div class="phone-number">
+                        <label>Your phone number</label>
+                        +91xxxxxxxxxx
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="submit-button">Post now</button>
+    </div>
+      </form>
+    </div>
+  </div>
+  <app-footer></app-footer>
+  

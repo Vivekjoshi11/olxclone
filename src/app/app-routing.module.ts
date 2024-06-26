@@ -20,6 +20,8 @@ import { SearchpageComponent } from './searchpage/searchpage.component';
 import { BuyBisinessComponent } from './buy-bisiness/buy-bisiness.component';
 import { BillingComponent } from './billing/billing.component';
 import { InvoicesComponent } from './invoices/invoices.component';
+import { HelpCenterComponent } from './help-center/help-center.component';
+import { PostAdFormComponent } from './post-ad-form/post-ad-form.component';
 
 
 
@@ -91,6 +93,14 @@ const routes: Routes = [
   {
     path: 'invoices',
     component: InvoicesComponent
+  },
+  {
+    path: 'help',
+    component: HelpCenterComponent
+  },
+  {
+    path: 'ad-sell',
+    component: PostAdFormComponent
   },
   
 ];
