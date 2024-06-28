@@ -153,101 +153,107 @@
   }
    */
 
-
    body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-  }
-  
-  .container {
+}
+
+.container {
     display: flex;
-    flex-direction: column; /* Change to column direction for smaller screens */
+    flex-direction: row;
     gap: 20px;
     padding: 20px;
     margin: 50px;
-  }
-  
-  .product-details {
-    width: 100%; /* Full width for smaller screens */
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 75%;
+}
+
+.product-details {
+    width: 25%;
     padding: 20px;
-  }
-  
-  .product-title {
-    font-size: 24px;
+}
+
+.product-title {
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
-  }
-  
-  .product-price {
-    font-size: 20px;
+}
+
+.product-price {
+    font-size: 24px;
     font-weight: bold;
     color: #333;
     margin-bottom: 10px;
-  }
-  
-  .product-description {
+}
+
+.product-description {
     margin-bottom: 10px;
-  }
-  
-  .seller-info {
+}
+
+.seller-info {
     border: 1px solid #ccc;
     padding: 10px;
     margin-bottom: 10px;
-  }
-  
-  .seller-name {
+}
+
+.seller-name {
     font-weight: bold;
     margin-bottom: 5px;
-  }
-  
-  .seller-location {
+}
+
+.seller-location {
     margin-bottom: 10px;
-  }
-  
-  .seller-actions {
+}
+
+.seller-actions {
     display: flex;
-    flex-direction: column; /* Stack buttons vertically for smaller screens */
+    flex-direction: column;
     gap: 10px;
-  }
-  
-  .seller-action-button {
+}
+
+.seller-action-button {
     padding: 8px 16px;
     border: none;
     background-color: #007bff;
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  .seller-action-button:hover {
+}
+
+.seller-action-button:hover {
     background-color: #0056b3;
-  }
-  
-  .seller-action-phone {
+}
+
+.seller-action-phone {
     color: #007bff;
     cursor: pointer;
-  }
-  
-  .pagination {
+}
+
+.pagination {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 70px;
-  }
-  
-  .pagination-button {
+}
+
+.pagination-button {
     padding: 8px 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  .pagination-button:hover {
+}
+
+.pagination-button:hover {
     background-color: #eee;
-  }
-  
-  .image-viewer {
+}
+
+.image-viewer {
     display: flex;
     align-items: center;
     width: 100%;
@@ -255,77 +261,152 @@
     height: 500px;
     background-color: rgb(215, 210, 210);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
-  
-  .image-viewer img {
+}
+
+.image-viewer img {
     width: auto;
     height: auto;
     max-height: 100%;
-  }
-  
-  .image-viewer button {
+}
+
+.image-viewer button {
     padding: 8px 16px;
     background-color: #ddd;
     border: none;
     cursor: pointer;
-  }
-  
-  .prev-button {
+}
+
+.prev-button {
     margin-right: auto;
     padding-left: 20px;
-  }
-  
-  .next-button {
+}
+
+.next-button {
     margin-left: auto;
     padding-right: 20px;
-  }
-  
-  .description {
-    width: 100%; /* Full width for smaller screens */
+}
+
+.description {
+    width: 96%;
     margin: 0 0 30px 0;
     border: 1px solid white;
     padding: 20px;
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
-  
-  /* Media Queries for Responsive Design */
-  
-  @media (min-width: 768px) {
+}
+
+.user-card {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.user-details {
+    flex-grow: 1;
+}
+
+.user-details h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.chat-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.contact-info i {
+    margin-right: 5px;
+}
+
+.contact-info .show-number {
+    margin-left: 10px;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.posted-in {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.posted-in h4 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+}
+
+.posted-in p {
+    margin: 0;
+    color: #555;
+}
+
+.map {
+    padding: 20px;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 767px) {
     .container {
-      flex-direction: row;
+        flex-direction: column;
+        margin: 20px;
     }
-  
-    .product-details {
-      width: 55%;
-      padding: 50px;
+
+    .left-column, .product-details {
+        width: 100%;
+        padding: 20px;
     }
-  
-    .description {
-      width: 53%;
-      margin-left: 50px;
-    }
-  }
-  
-  @media (max-width: 767px) {
-    .container {
-      flex-direction: column;
-      margin: 20px;
-    }
-  
-    .product-details {
-      width: 100%;
-      padding: 20px;
-    }
-  
-    .description {
-      width: 100%;
-      margin: 0 0 30px 0;
-    }
-  
-    .seller-actions {
-      flex-direction: column; /* Stack buttons vertically for smaller screens */
-    }
-  }
-  
+}
+
+.breadcrumb {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #666;
+  margin-left: 70px;
+  /* overflow-x: auto; */
+}
+
+.breadcrumb a {
+  color: #191919;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.breadcrumb span {
+  margin: 0 5px;
+  color: #666;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}

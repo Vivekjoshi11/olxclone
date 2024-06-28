@@ -8,8 +8,8 @@
     padding: 20px;
     background-color: #ffffff;
     border-right: 1px solid #ddd;
-    display: flex;
-    align-items: flex-start;
+    /* display: flex;
+    align-items: flex-start; */
     justify-content: center;
   }
   

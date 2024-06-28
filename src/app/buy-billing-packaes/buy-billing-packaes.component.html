@@ -25,15 +25,24 @@
                     <label for="subcategory">Select Subcategory</label>
                     <select id="subcategory">
                         <option value="">Select Subcategory</option>
-                        <!-- Add more options as needed -->
+                        <option value="">Select Category</option>
+                        <option value="">Cars</option>
+                        <option value="">Bike</option>
+                        <option value="">Proprties</option>
+                        <option value="">Mobile</option>
+                        <option value="">Furniture</option>
+                        <option value="">Fashion</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="location">Location</label>
-                    <input type="text" id="location" value="Ahmedabad, Gujarat" disabled>
+                    <input type="text" id="location" value="Ahmedabad, Gujarat" >
                 </div>
-                <button type="submit" disabled>Show packages</button>
+                
+               
             </form>
+           
+            <button (click)="navigateToPackageDetail()">Show packages</button>
             <div class="info-text">
                 <i class="fas fa-info-circle"></i> The package you choose will only be valid for the selected category and location.
             </div>

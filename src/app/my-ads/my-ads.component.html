@@ -1,8 +1,7 @@
-<app-userheader></app-userheader>
-<app-subheader></app-subheader>
 
 
-<div class="ads-page-container">
+
+<!-- <div class="ads-page-container">
     <div class="header">
       <h2>ADS</h2>
       <h2>FAVOURITES</h2>
@@ -40,4 +39,52 @@
     </div>
   </div>
   
+<app-footer></app-footer> -->
+
+
+<app-userheader></app-userheader>
+<app-subheader></app-subheader>
+<div class="ads-page-container">
+    <div class="header">
+        <h2>ADS</h2>
+        <h2>FAVOURITES</h2>
+    </div>
+    <div class="ad-banner">
+        <p>Want to sell more?</p>
+        <button class="packages-button">Show me packages</button>
+    </div>
+    <div class="search-filter">
+        <input type="text" placeholder="Search by Ad Title" class="search-input"/>
+        <div class="filter-buttons">
+            <button [class.active]="selectedFilter === 'all'" (click)="selectFilter('all')">View all (1)</button>
+            <button [class.active]="selectedFilter === 'active'" (click)="selectFilter('active')">Active Ads (0)</button>
+            <button [class.active]="selectedFilter === 'inactive'" (click)="selectFilter('inactive')">Inactive Ads (0)</button>
+            <button [class.active]="selectedFilter === 'pending'" (click)="selectFilter('pending')">Pending Ads (1)</button>
+            <button [class.active]="selectedFilter === 'moderated'" (click)="selectFilter('moderated')">Moderated Ads (0)</button>
+        </div>
+    </div>
+    <div class="ads-list">
+        <div class="ad-item" *ngFor="let ad of ads" [class.pending]="ad.status === 'pending'">
+            <div class="ad-details">
+                <div class="like-icon-container">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="like-icon" fill="currentColor">
+                        <path d="M462.3 62.7c-54.5-46.4-136-38.4-178.7 13.7L256 108.6l-27.6-32.1C186.4 24.4 104.9 16.3 50.3 62.7-10.6 113.8-16.5 210.5 49.3 274.1l193.5 199.8c10 10.3 23.3 16 37.2 16s27.2-5.7 37.2-16l193.5-199.8c65.9-63.7 59.9-160.3-1.4-211.4zM256 448L69.7 260.8c-50.5-52.1-43.4-132.9 16.1-176.3 41.7-30.4 100.5-23.8 135.7 13.8L256 165.4l34.5-39.1c35.2-37.6 94-44.2 135.7-13.8 59.5 43.4 66.6 124.2 16.1 176.3L256 448z"/>
+                    </svg> -->
+                </div>
+                <img [src]="ad.image" alt="Ad Image"/>
+                <div class="ad-info">
+                    <p><strong>{{ ad.title }}</strong></p>
+                    <p>From: {{ ad.fromDate }} To: {{ ad.toDate }}</p>
+                    <p>Price: {{ ad.price }}</p>
+                    <p>Status: {{ ad.status | uppercase }}</p>
+                </div>
+            </div>
+            <div class="ad-actions">
+                <p>{{ ad.statusMessage }}</p>
+                <button>Sell faster now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <app-footer></app-footer>

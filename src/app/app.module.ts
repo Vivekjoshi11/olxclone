@@ -41,6 +41,7 @@ import { BillingComponent } from './billing/billing.component';
 import { InvoicesComponent } from './invoices/invoices.component';
 import { HelpCenterComponent } from './help-center/help-center.component';
 import { PostAdFormComponent } from './post-ad-form/post-ad-form.component';
+import { PackageDetailComponent } from './package-detail/package-detail.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +74,8 @@ import { PostAdFormComponent } from './post-ad-form/post-ad-form.component';
     BillingComponent,
     InvoicesComponent,
     HelpCenterComponent,
-    PostAdFormComponent
+    PostAdFormComponent,
+    PackageDetailComponent
     
   ],
   imports: [

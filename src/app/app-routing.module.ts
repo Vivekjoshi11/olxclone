@@ -22,6 +22,7 @@ import { BillingComponent } from './billing/billing.component';
 import { InvoicesComponent } from './invoices/invoices.component';
 import { HelpCenterComponent } from './help-center/help-center.component';
 import { PostAdFormComponent } from './post-ad-form/post-ad-form.component';
+import { PackageDetailComponent } from './package-detail/package-detail.component';
 
 
 
@@ -101,6 +102,10 @@ const routes: Routes = [
   {
     path: 'ad-sell',
     component: PostAdFormComponent
+  },
+  {
+    path: 'packagedetail',
+    component: PackageDetailComponent
   },
   
 ];

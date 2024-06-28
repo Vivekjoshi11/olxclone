@@ -1,0 +1,140 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  hr{
+    max-width: 100%;
+  }
+
+  .hr1{
+    max-width: 100%;
+    height: 4px;
+    background-color: grey;
+  }
+  
+  .image-viewer {
+    text-align: center;
+    margin: 20px;
+
+  }
+  
+  .image-viewer img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .details {
+    width: 90%;
+  }
+  
+  h2, h3 {
+    margin: 10px 0;
+    /* margin-left: 10px; */
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 10px;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    margin-left: 10px;
+  }
+  
+  .packages {
+    display: flex;
+    justify-content: flex-start;
+    /* flex-wrap: wrap; */
+    overflow-x: auto;
+  }
+  
+  .package {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px;
+    width: 30%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .price-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .discount {
+    background: yellow;
+    padding: 5px;
+    border-radius: 3px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .price {
+    font-size: 1.2em;
+    color: green;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    color: grey;
+    margin-left: 5px;
+  }
+  
+  .helpblock{
+    display: flex;
+    background-color: rgb(227, 227, 227);
+    width: 70%;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    border: 1px solid black;
+  }
+
+  .helpup{
+    justify-content: center;
+
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f6f6f6;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.help a {
+    color: #004f59;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.help a:hover {
+    text-decoration: underline;
+}
