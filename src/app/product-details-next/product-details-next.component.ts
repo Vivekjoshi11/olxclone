@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-product-details-next',
@@ -12,6 +12,7 @@ export class ProductDetailsNextComponent {
     'https://th.bing.com/th/id/OIP.HzunTto4bE4iBFHf_yiJ8wHaE8?rs=1&pid=ImgDetMain'
   ];
   currentIndex: number = 0;
+  isButtonVisible: boolean = false;
 
   constructor() { }
 
@@ -30,4 +31,22 @@ export class ProductDetailsNextComponent {
       this.currentIndex = this.images.length - 1;
     }
   }
+
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+      this.isButtonVisible = true;
+    } 
+    else {
+      this.isButtonVisible = false;
+    }
+  }
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    this.isButtonVisible = false;
+  }
+
+
 }

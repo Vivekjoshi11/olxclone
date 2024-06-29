@@ -15,4 +15,12 @@ export class PackageDetailComponent {
     this.router.navigate(['sellComponent']);
     console.log('done')
   }
+  navigateToUser(): void {
+    this.router.navigate(['/Profileuser']);
+    console.log('done')
+  }
+  navigateToHelp(): void {
+    this.router.navigate(['help']);
+    console.log('done')
+  }
 }

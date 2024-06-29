@@ -402,6 +402,9 @@ body {
   background-color: #f8f8f8;
   border-bottom: 1px solid #e0e0e0;
   flex-wrap: wrap;
+  position: fixed;
+  width: 98%;
+  z-index: 100;
 }
 
 .header-left,

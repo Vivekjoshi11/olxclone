@@ -393,13 +393,14 @@
   font-size: 14px;
   color: #666;
   margin-left: 70px;
-  /* overflow-x: auto; */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .breadcrumb a {
   color: #191919;
   text-decoration: none;
   margin: 0 5px;
+  white-space: nowrap; /* Prevent wrapping of individual breadcrumb items */
 }
 
 .breadcrumb span {
@@ -409,4 +410,56 @@
 
 .breadcrumb a:hover {
   text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .breadcrumb {
+      font-size: 1px; /* Adjust font size for smaller screens */
+      margin-left: 10px;
+      flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .breadcrumb {
+      font-size: 10px; 
+      margin-left: 5px;
+      
+  }
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+  /* z-index: 1000; */
+}
+
+.scroll-to-top.show {
+  display: block;
+}
+
+.scroll-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.sbtn{
+  height: 50px;
+  width: 150px;
+  color: black;
+  background-color: white;
+  border-radius: 25px;
+  /* border: none; */
 }
