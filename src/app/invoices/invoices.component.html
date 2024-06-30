@@ -16,15 +16,21 @@
             <p>Haven't you tried our featured ads yet? Increase your views!</p>
         </div> -->
         <div class="ads-page-container">
-            <!-- <div class="header">
-              <h2>ADS</h2>
-              <h2>FAVOURITES</h2>
-            </div> -->
-            <!-- <div class="ad-banner">
-              <p>Want to sell more?</p>
-              <button class="packages-button">Show me packages</button>
-            </div> -->
+           
             <div class="search-filter">
+              <input type="text" placeholder="Search by Ad Title" class="search-input" />
+              <div class="filter-buttons">
+                <button class="menu-button" (click)="toggleMenu()">☰ Menu</button>
+                <div class="filter-menu" [ngClass]="{'show': isMenuVisible}">
+                  <button [class.active]="selectedFilter === 'all'" (click)="selectFilter('all')">View all (1)</button>
+                  <button [class.active]="selectedFilter === 'active'" (click)="selectFilter('active')">Active  (0)</button>
+                  <button [class.active]="selectedFilter === 'inactive'" (click)="selectFilter('inactive')">Inactive  (0)</button>
+                  <button [class.active]="selectedFilter === 'pending'" (click)="selectFilter('pending')">Pending  (1)</button>
+                  <button [class.active]="selectedFilter === 'moderated'" (click)="selectFilter('moderated')">Moderated  (0)</button>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="search-filter">
               <input type="text" placeholder="Search by Ad Title" class="search-input"/>
               <div class="filter-buttons">
                 <button [class.active]="selectedFilter === 'all'" (click)="selectFilter('all')">View all (1)</button>
@@ -33,7 +39,7 @@
                 <button [class.active]="selectedFilter === 'pending'" (click)="selectFilter('pending')">Pending  (1)</button>
                 <button [class.active]="selectedFilter === 'moderated'" (click)="selectFilter('moderated')">Moderated  (0)</button>
               </div>
-            </div>
+            </div> -->
             <div class="ads-list">
               <div class="ad-item" *ngFor="let ad of ads" [class.pending]="ad.status === 'pending'">
                 <div class="ad-details">

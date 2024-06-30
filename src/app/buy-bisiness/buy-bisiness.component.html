@@ -10,11 +10,7 @@
       </ul>
     </div>
     <div class="main-content">
-      <!-- <div class="tabs">
-        <button class="tab active" (click)="selectTab('active')">Active</button>
-        <button class="tab" (click)="selectTab('scheduled')">Scheduled</button>
-        <button class="tab" (click)="selectTab('expired')">Expired</button>
-      </div> -->
+   
       <div class="tabs">
         <button class="tab" [class.active]="selectedTab === 'active'" (click)="selectTab('active')">Active</button>
         <button class="tab" [class.active]="selectedTab === 'scheduled'" (click)="selectTab('scheduled')">Scheduled</button>
@@ -24,18 +20,31 @@
         <ng-container *ngIf="selectedTab === 'active'">
           <div class="ads-page-container">
           
-            <!-- <div class="ad-banner">
-              <p>Want to sell more?</p>
-              <button class="packages-button">Show me packages</button>
-            </div> -->
-            <div class="search-filter">
+          
+            <!-- <div class="search-filter">
               <input type="text" placeholder="Search by Ad Title" class="search-input"/>
               <div class="filter-buttons">
+                <button class="menu-button" (click)="toggleMenu()">☰ Menu</button>
+                <div class="filter-menu" [ngClass]="{'show': isMenuVisible}">
                 <button [class.active]="selectedFilter === 'all'" (click)="selectFilter('all')">View all (1)</button>
                 <button [class.active]="selectedFilter === 'active'" (click)="selectFilter('active')">Active (0)</button>
                 <button [class.active]="selectedFilter === 'inactive'" (click)="selectFilter('inactive')">Inactive  (0)</button>
                 <button [class.active]="selectedFilter === 'pending'" (click)="selectFilter('pending')">Pending order (1)</button>
-                <!-- <button [class.active]="selectedFilter === 'moderated'" (click)="selectFilter('moderated')">Moderated Ads (0)</button> -->
+               </div>
+              </div>
+            </div> -->
+
+            <div class="search-filter">
+              <input type="text" placeholder="Search by Ad Title" class="search-input" />
+              <div class="filter-buttons">
+                <button class="menu-button" (click)="toggleMenu()">☰ Menu</button>
+                <div class="filter-menu" [ngClass]="{'show': isMenuVisible}">
+                  <button [class.active]="selectedFilter === 'all'" (click)="selectFilter('all')">View all (1)</button>
+                  <button [class.active]="selectedFilter === 'active'" (click)="selectFilter('active')">Active  (0)</button>
+                  <button [class.active]="selectedFilter === 'inactive'" (click)="selectFilter('inactive')">Inactive  (0)</button>
+                  <button [class.active]="selectedFilter === 'pending'" (click)="selectFilter('pending')">Pending  (1)</button>
+                  <!-- <button [class.active]="selectedFilter === 'moderated'" (click)="selectFilter('moderated')">Moderated  (0)</button> -->
+                </div>
               </div>
             </div>
             <div class="ads-list">

@@ -134,7 +134,6 @@ body {
   font-weight: 700;
 }
 
-/* For screens larger than 1200px */
 @media (min-width: 1200px) {
   .header {
       flex-wrap: nowrap;
@@ -153,7 +152,6 @@ body {
   }
 }
 
-/* For screens between 768px and 1200px */
 @media (max-width: 1200px) and (min-width: 768px) {
   .header {
       flex-wrap: nowrap;
@@ -172,7 +170,6 @@ body {
   }
 }
 
-/* For screens less than 768px */
 @media (max-width: 768px) {
   .header {
       flex-wrap: wrap;
@@ -209,7 +206,6 @@ body {
   }
 }
 
-/* For screens less than 480px */
 @media (max-width: 480px) {
   .header {
       padding: 5px 10px;
@@ -252,14 +248,14 @@ body {
 .notification-panel {
   display: none;
   position: absolute;
-  top: 100%; /* Positions the panel below the button */
-  left: 0; /* Aligns the panel to the left side of the button */
-  background-color: #fff; /* Background color of the panel */
-  padding: 10px; /* Padding for content within the panel */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-  z-index: 1; /* Ensures the panel appears on top of other elements */
+  top: 100%; 
+  left: 0; 
+  background-color: #fff;
+  padding: 10px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  z-index: 1; 
 }
 
 .message-button:hover .notification-panel {
-  display: block; /* Shows the panel on hover */
+  display: block;
 }

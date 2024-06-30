@@ -1,157 +1,4 @@
-/* body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
- 
-  }
-  
-  .container {
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-    margin: 50px; 
-  }
-  
-  .product-image {
-    width: 500px;
-    height: 400px;
-    border: 1px solid #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .product-image img {
-    max-width: 100%;
-    max-height: 100%;
-  }
-  
-  .product-details {
-   
-    width: 50%;
-    padding: 100px;
-  }
-  
-  .product-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .product-price {
-    font-size: 20px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .product-description {
-    margin-bottom: 10px;
-  }
-  
-  .seller-info {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .seller-name {
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .seller-location {
-    margin-bottom: 10px;
-  }
-  
-  .seller-actions {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .seller-action-button {
-    padding: 8px 16px;
-    border: none;
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .seller-action-button:hover {
-    background-color: #0056b3;
-  }
-  
-  .seller-action-phone {
-    color: #007bff;
-    cursor: pointer;
-  }
-  
-  .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
 
-  }
-  
-  .pagination-button {
-    padding: 8px 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .pagination-button:hover {
-    background-color: #eee;
-  }
-  .image-viewer {
-    display: flex;
-    align-items: center; 
-    width: 100%;
-    border: 1px solid white;
-    height: 500px;
-    background-color: rgb(215, 210, 210);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-
-  }
-  
-  .image-viewer img {
-    width: auto; 
-    height: auto;
-    max-height: 100%;
-  }
-  
-  .image-viewer button {
-    padding: 8px 16px; 
-    background-color: #ddd; 
-    border: none; 
-    cursor: pointer; 
-
-  }
-  
-  .prev-button{
-  
-  margin-right: auto;
-  padding-left: 20px;
-  }
-  .next-button{
-    margin-left: auto;
-    padding-right: 20px;
-  }
-  .description{
- 
-    width: 45.5%;
-    margin-left: 50px;
-    margin-bottom: 30px;
-    border: 1px solid white;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-
-  }
-   */
 
    body {
     margin: 0;
@@ -253,7 +100,7 @@
     background-color: #eee;
 }
 
-.image-viewer {
+/* .image-viewer {
     display: flex;
     align-items: center;
     width: 100%;
@@ -284,6 +131,55 @@
 .next-button {
     margin-left: auto;
     padding-right: 20px;
+} */
+.image-viewer {
+  position: relative; /* Added to position buttons absolutely within the container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid white;
+  height: 500px;
+  background-color: rgb(215, 210, 210);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+.image-viewer img {
+  max-height: 100%;
+  max-width: 100%; /* Ensure the image scales correctly */
+}
+
+.prev-button, .next-button {
+  position: absolute; /* Position buttons absolutely */
+  cursor: pointer;
+  background-color: transparent; /* Make background transparent */
+  border: none; /* Remove default button border */
+}
+
+.prev-button {
+  left: 10px; /* Position previous button on the left */
+}
+
+.next-button {
+  right: 10px; /* Position next button on the right */
+}
+
+@media (max-width: 767px) {
+  .image-viewer {
+      height: auto; /* Adjust height to fit content */
+      padding: 10px; /* Add some padding */
+  }
+
+  .prev-button, .next-button {
+      top: 50%; /* Center vertically */
+      transform: translateY(-50%); /* Adjust for vertical centering */
+  }
+
+  .image-viewer img {
+      max-width: 100%; /* Make the image responsive */
+      max-height: 300px; /* Adjust max-height for mobile */
+  }
 }
 
 .description {

@@ -46,8 +46,17 @@ export class BuyBisinessComponent {
 
   ngOnInit(): void { }
 
+  
+ 
+  isMenuVisible: boolean = false;
+
+
+  toggleMenu(): void {
+    this.isMenuVisible = !this.isMenuVisible;
+  }
+
   selectFilter(filter: string): void {
     this.selectedFilter = filter;
-    // You can add logic here to filter the ads based on the selected filter
+    this.isMenuVisible = false;  // Optional: hide the menu after selection
   }
 }
