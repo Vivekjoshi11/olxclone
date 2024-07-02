@@ -1,11 +1,23 @@
-.advertisement{
+.advertisement {
   padding-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* Additional styles for content (optional) */
-    width: 50%;  /* Adjust width as needed */
-    margin: auto;  /* Optional for horizontal centering */
-    font-size: 13px;
-    font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;  /* Adjust width as needed */
+  margin: auto;  /* Optional for horizontal centering */
+  font-size: 13px;
+  font-weight: 300;
+}
+
+/* Media query for mobile view */
+@media (max-width: 600px) {
+  .advertisement {
+    width: 90%;  /* Adjust width for mobile view */
+    font-size: 11px;  /* Adjust font size for mobile view */
   }
+  
+  .advertisement img {
+    width: 100%;  /* Adjust image width for mobile view */
+    height: auto;  /* Maintain aspect ratio */
+  }
+}
